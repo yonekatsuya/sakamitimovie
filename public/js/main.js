@@ -389,6 +389,7 @@ $(function(){
     $('#categorySearchModalContent .responsiveNogizaka, #categorySearchModalContent .responsiveKeyakizaka').css('display','none');
   });
 
+  // スマホ画面でのヘッダーメニュー押下時の処理
    $(document).on('click','#headerMenuBar',function() {
      $('.headerNavMenuContent').animate({
        'top' : '0%'
