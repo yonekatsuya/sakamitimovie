@@ -52,7 +52,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/hayakawa.png')}}" width="100%" height="100%">
               <p>
-                <label>早川聖良</label>
+                <label>早川聖来</label>
               </p>
             </div>
           </a>
