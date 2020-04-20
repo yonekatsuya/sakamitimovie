@@ -22,7 +22,7 @@
   <ul>
     <li id="categorySearchBtn">カテゴリ検索</li>
     <li><a href="{{route('user.index')}}">ユーザー一覧</a></li>
-    <li><a href="{{route('user.loveMemberIndex')}}">推しメン一緒な人一覧</a></li>
+    <li><a href="{{route('user.loveMemberIndex')}}">推しメンで繋がる</a></li>
     <li><a href="{{route('main.chat')}}">チャット</a></li>
     @if(Auth::check())
       <li><a href="javascript:void(0)" class="loveRegister">推しメン登録</a></li>

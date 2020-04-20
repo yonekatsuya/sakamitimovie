@@ -4,7 +4,7 @@
     <div class="item"><p id="categorySearchBtn">カテゴリ検索</p></div>
     <div class="item"><p class="sideMenuDisp">メンバー別動画</p></div>
     <div class="item"><a href="{{route('user.index')}}">ユーザー一覧</a></div>
-    <div class="item"><a href="{{route('user.loveMemberIndex')}}">推しメン一緒な人一覧</a></div>
+    <div class="item"><a href="{{route('user.loveMemberIndex')}}">推しメンで繋がる</a></div>
     <div class="item"><a href="{{route('main.chat')}}">チャット</a></div>
     @if(Auth::check())
       <div class="item"><a href="javascript:void(0)" class="loveRegister">推しメン登録</a></div>
