@@ -1,0 +1,328 @@
+/* トップスクロール */
+.top-scroll-right {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1;
+}
+
+.responsiveSideForm {
+  display: none;
+}
+
+/* コンテンツエリア */
+.main-wrapper {
+  margin-top: 50px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.content {
+  float: left;
+  width: 68%;
+}
+
+.side {
+  float: right;
+  width: 32%;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.side ul {
+  list-style: none;
+  font-size: 22px;
+  padding-left: 0;
+}
+
+.side li {
+  padding: 10px 0 10px 0;
+}
+
+.side li a {
+  cursor: pointer;
+  color: white;
+}
+
+.side-title {
+  display: none;
+  color: black;
+  padding: 10px;
+  font-size: 24px;
+  background-color: #f0f8ff;
+  margin-top: 100px;
+}
+
+.side-nogizaka {
+  width: 100%;
+  background-image: linear-gradient(to right, #c471f5 0%, #fa71cd 100%);
+  padding: 10px 0 10px 0;
+}
+
+.side-keyakizaka {
+  width: 100%;
+  background-image: linear-gradient(to right, #38f9d7 0%, #43e97b 100%);
+  padding: 10px 0 10px 0;
+}
+
+.side-hinatazaka {
+  width: 100%;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  padding: 10px 0 10px 0;
+}
+
+.side-nogizaka-title, .side-keyakizaka-title, .side-hinatazaka-title {
+  font-size: 30px;
+}
+
+.content .row1 {
+  margin-bottom: 25px;
+}
+
+.content .row1-left {
+  display: inline-block;
+  height: 520px;
+  width: 48%;
+  margin-bottom: 30px;
+  margin-left: 5px;
+  border: 1px solid black;
+  background-color: white;
+  overflow-y: scroll;
+  word-break: break-all;
+}
+
+.row1-image {
+  height: 50%;
+}
+
+.row1-content {
+  height: 50%;
+}
+
+.row1-content .calender  {
+  font-size: 14px;
+  display: inline-block;
+}
+
+.row1-content .category {
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  background-color: #7e1184;
+  padding: 4px;
+}
+
+.row1-content > div {
+  padding-left: 20px;
+}
+
+.content-pagination {
+  width: 100%;
+  height: 30px;
+  position: relative;
+}
+
+.content-pagination nav {
+  display: inline-block;
+  position: absolute;
+  left: 49%;
+  transform: translateX(-49%);
+}
+
+.pagination {
+  height: 30px;
+  width: 120%;
+  padding-left: 0;
+}
+
+.pagination li {
+  float: left;
+  list-style: none;
+  padding: 10px;
+}
+
+.pagination .page-item {
+  margin-right: 2px;
+  font-weight: bold;
+}
+
+.pagination .page-item:hover {
+  opacity: 0.5;
+  border-bottom: 1px solid green;
+}
+
+/* 検索フォーム */
+.sideForm {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sideFormArea {
+  position: relative;
+}
+
+.sideInput {
+  height: 30px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.sideSubmitArea {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translateY(-50%);
+}
+
+.sideSubmit {
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: #ffebcd;
+}
+
+#modalSideForm {
+  position: fixed;
+  top: -10%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+/* カテゴリ検索モーダル */
+#categorySearch {
+  position: fixed;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 80vw;
+  height: 60vh;
+  background-color: #e0ffff;
+  z-index: 10002;
+}
+
+#categorySearchModal {
+  position: relative;
+}
+
+#categorySearchClose {
+  position: absolute;
+  top: -2%;
+  right: 0%;
+  font-size: 28px;
+  color: #999;
+  z-index: 10003;
+}
+
+#responsiveCategorySearchClose {
+  display: none;
+  position: absolute;
+  top: -2%;
+  right: 0%;
+  font-size: 28px;
+  color: #999;
+  z-index: 10003;
+}
+
+#categorySearchModalTitle {
+  height: 3vh;
+  background-color: #ffebcd;
+  position: relative;
+}
+
+#categorySearchModalTitle p {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#categorySearchModalNav {
+  display: flex;
+}
+
+#responsiveCategorySearchModalNav {
+  display: none;
+}
+
+#nogizakaCategorySearch, #responsiveNogizakaCategorySearch {
+  width: 33%;
+  height: 5vh;
+  background-image: linear-gradient(to right, #c471f5 0%, #fa71cd 100%);
+  position: relative;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+#nogizakaCategorySearch:hover {
+  opacity: 0.7;
+}
+
+#keyakizakaCategorySearch, #responsiveKeyakizakaCategorySearch {
+  width: 33%;
+  height: 5vh;
+  background-image: linear-gradient(to right, #38f9d7 0%, #43e97b 100%);
+  position: relative;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+#keyakizakaCategorySearch:hover {
+  opacity: 0.7;
+}
+
+#hinatazakaCategorySearch, #responsiveHinatazakaCategorySearch {
+  flex: 1;
+  height: 5vh;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  position: relative;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+#hinatazakaCategorySearch:hover {
+  opacity: 0.7;
+}
+
+#nogizakaCategorySearch p, #keyakizakaCategorySearch p, #hinatazakaCategorySearch p, #responsiveNogizakaCategorySearch p, #responsiveKeyakizakaCategorySearch p, #responsiveHinatazakaCategorySearch p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#categorySearchModalContent {
+  height: 52vh;
+  overflow-y: scroll;
+}
+
+#categorySearchModalContent .responsiveNogizaka, #categorySearchModalContent .responsiveKeyakizaka, #categorySearchModalContent .responsiveHinatazaka {
+  display: none;
+}
+
+#categorySearchModalContent .nogizaka {
+  height: 100%;
+}
+
+#categorySearchModalContent .keyakizaka, #categorySearchModalContent .hinatazaka {
+  display: none;
+}
+
+#categorySearch a {
+  display: inline-block;
+  font-size: 20px;
+  padding: 40px;
+}
+
+#categorySearch a span:hover {
+  font-weight: bold;
+  opacity: 0.7;
+}

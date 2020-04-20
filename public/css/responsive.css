@@ -1,0 +1,126 @@
+@media (max-width: 479px) {
+  .header #headerMenuBar {
+    display: block;
+  }
+
+  .header ul {
+    display: none;
+  }
+
+  .header p {
+    padding-left: 5px;
+  }
+
+  .nav-bar {
+    background-image: linear-gradient(to right, rgb(253, 219, 146) 0%, rgb(209, 253, 255) 100%);
+  }
+
+  .nav-bar div {
+    width: 100%;
+    margin-top: 0;
+    padding: 10px;
+  }
+
+  .nav-bar div:nth-child(1) {
+    background-image: linear-gradient(to right, #c471f5 0%, #fa71cd 100%);
+  }
+
+  .nav-bar div:nth-child(2) {
+    background-image: linear-gradient(to right, #38f9d7 0%, #43e97b 100%);
+  }
+
+  .nav-bar div:nth-child(3) {
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  }
+
+  #categorySearch a {
+    display: block;
+    padding: 10px;
+  }
+
+  .main-title {
+    padding-left: 0;
+  }
+
+  .main-title h2 {
+    text-align: center;
+  }
+
+  .main-title p {
+    width: 80%;
+    margin: -10px auto 20px;
+  }
+
+  .breadcrumb {
+    padding-left: 0;
+  }
+
+  .responsiveSideForm {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .nonResponsiveSideForm {
+    display: none;
+  }
+
+  .content {
+    float: none;
+    width: 100%;
+  }
+
+  .content .row1 {
+    width: 100%;
+  }
+
+  .content .row1-left {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .side {
+    float: none;
+    width: 100%;
+  }
+
+  .side-title {
+    display: block;
+  }
+
+  #twitter-widget-0 {
+    display: none !important;
+  }
+
+  .side-menu {
+    display: none;
+  }
+
+  #categorySearch {
+    height: 33vh;
+  }
+
+  #categorySearchClose {
+    display: none;
+  }
+
+  #responsiveCategorySearchClose {
+    display: block;
+  }
+
+  #categorySearchModalNav {
+    display: none;
+  }
+
+  #responsiveCategorySearchModalNav {
+    display: block;
+  }
+
+  #responsiveNogizakaCategorySearch, #responsiveKeyakizakaCategorySearch, #responsiveHinatazakaCategorySearch {
+    width: 100%;
+    height: 10vh;
+  }
+
+  #categorySearchModalContent .nogizaka, #categorySearchModalContent .keyakizaka, #categorySearchModalContent .hinatazaka {
+    display: none;
+  }
+}

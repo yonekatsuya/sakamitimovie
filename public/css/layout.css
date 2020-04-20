@@ -1,0 +1,481 @@
+.wrap {
+  overflow: hidden;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+ 
+.clearfix:before {
+  content: "";
+	display: block;
+	clear: both;
+}
+ 
+.clearfix {
+	display: block;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* 最上部ヘッダー */
+.header {
+  font-size: 13px;
+  height: 27px;
+  border-bottom: 1px solid #7e1184;
+}
+
+.header p {
+  display: inline-block;
+  float: left;
+  padding-left: 30px;
+  margin-top: 5px;
+}
+
+.header .count-up {
+  color: red;
+}
+
+.header ul {
+  float: right;
+  list-style: none;
+  display: inline-block;
+  margin-top: -1px;
+  padding: 4px;
+}
+
+.header li {
+  float: left;
+  display: inline-block;
+  padding-right: 30px;
+}
+
+.header #headerMenuBar {
+  float: right;
+  padding: 5px;
+  display: none;
+}
+
+/* 全体共通見出し */
+.main-title {
+  /* height: 98px; */
+  padding-left: 100px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.main-title:hover {
+  opacity: 0.7;
+}
+
+.main-title h2 {
+  font-weight: normal;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.main-title p {
+  margin-top: -10px;
+  cursor: pointer;
+}
+
+/* ナビバー */
+.nav-bar {
+  /* height: 46px; */
+  color: white;
+}
+
+.nav-bar div {
+  float: left;
+  text-align: center;
+  /* margin-top: 10px; */
+  width: 33%;
+  cursor: pointer;
+  vertical-align: middle;
+  padding: 12px 0;
+}
+
+.nav-bar div:nth-child(1) {
+  background-image: linear-gradient(to right, #c471f5 0%, #fa71cd 100%);
+}
+
+.nav-bar div:nth-child(2) {
+  background-image: linear-gradient(to right, #38f9d7 0%, #43e97b 100%);
+}
+
+.nav-bar div:nth-child(3) {
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+.nav-bar div:nth-child(1):hover {
+  background-color: #7e1184;
+  height: 100%;
+  margin-top: 0;
+}
+
+.nav-bar div:nth-child(2):hover {
+  background-color: #5fb955;
+  height: 100%;
+  margin-top: 0;
+}
+
+.nav-bar div:nth-child(3):hover {
+  background-color: #5bbee5;
+  height: 100%;
+  margin-top: 0;
+}
+
+.nav-bar a {
+  color: white;
+}
+
+.headerNavMenuContent {
+  position: fixed;
+  top: -50%;
+  left: 0%;
+  width: 100%;
+  background-color: #f0f8ff;
+  text-align: center;
+}
+
+.headerNavMenuContent .item {
+  width: 100%;
+  height: 30px;
+  font-weight: bold;
+  border-bottom: 1px solid skyblue;
+}
+
+.sideMenuDisp {
+  padding-top: 3px;
+  margin: 0;
+}
+
+.headerNavMenuContent .item a {
+  display: inline-block;
+  margin-top: 3px;
+}
+
+.headerNavMenuContent .item:last-child {
+  border-bottom: 0px;
+}
+
+.headerNavMenuContent .item:hover {
+  opacity: 0.7;
+}
+
+.headerNavMenuContentModal {
+  position: relative;
+}
+
+.headerNavMenuContentModal .close {
+  color: #999;
+  position: absolute;
+  top: -10%;
+  right: 1%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.headerNavMenuContentModal .close:hover {
+  opacity: 0.7;
+}
+
+/* パンくずリスト */
+.main-pan {
+  height: 63px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.main-pan p {
+  color: #999;
+  font-size: 14px;
+  padding-top: 15px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.breadcrumb {
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 63px;
+}
+
+.breadcrumb-item {
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 14px;
+  padding-top: 23px;
+}
+
+/* カルーセル */
+.bxslider-wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.bxslider img {
+  display: inline-block;
+  width: 22%;
+  height: 200px;
+  padding-right: 20px;
+}
+
+.bxslider div img:nth-child(1) {
+  margin-left: 30px;
+}
+
+/* ハンバーガーメニュー */
+.side-menu {
+  position: fixed;
+  top: 50%;
+  left: 2%;
+  transform: translate(-2%,-50%);
+  z-index: 10010;
+}
+
+.side-menu img {
+  cursor: pointer;
+}
+
+.side-menu img:hover {
+  opacity: 0.7;
+}
+
+
+/* メンバー別選択モーダル */
+.menu-content {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10009;
+  background-color: #eee;
+  display: flex;
+}
+
+.menu-content-left {
+  display: inline-block;
+  height: 100vh;
+  width: 4.8%;
+}
+
+.menu-content-right {
+  display: inline-block;
+  height: 100vh;
+  flex: 1;
+  position :relative;
+  border-left: 3px solid #7e1184;
+}
+
+.menu-content-right-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  color: white;
+  background: linear-gradient(90deg, #7e1184, #5fb955, #5bbee5);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.menu-content-right-nav div {
+  display: inline-block;
+  height: 100%;
+  width: 33%;
+  text-align: center;
+}
+
+.menu-content-right-nav div:nth-child(1), .menu-content-right-nav div:nth-child(2), .menu-content-right-nav div:nth-child(3) {
+  position: relative;
+}
+
+.menu-content-right-nav div:nth-child(1):hover {
+  background-color: #7e1184;
+}
+
+.menu-content-right-nav div:nth-child(2):hover {
+  background-color: #5fb955;
+}
+
+.menu-content-right-nav div:nth-child(3):hover {
+  background-color: #5bbee5;
+}
+
+.menu-content-right-nav div:nth-child(1) p, .menu-content-right-nav div:nth-child(2) p, .menu-content-right-nav div:nth-child(3) p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.menu-content-right-title {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 5vh;
+  color: white;
+  background-color: #7e1184;
+  font-size: 25px;
+}
+
+.menu-content-right-title div {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.menu-content-right-title p {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-60%,-50%);
+  margin: 0;
+  height: 100%;
+}
+
+.menu-content-right-content {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  width: 100%;
+  height: 85vh;
+  overflow: scroll;
+}
+
+.menu-content-item {
+  display: inline-block;
+  text-align: center;
+  height: 150px;
+  width: 12%;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.menu-content-item:hover {
+  opacity: 0.7;
+}
+
+.menu-content-item-wrapper-keyakizaka, .menu-content-item-wrapper-hinatazaka {
+  display: none;
+}
+
+.menu-content-item-wrapper-nogizaka {
+  background-image: linear-gradient(120deg, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.menu-content-item-wrapper-keyakizaka {
+  background-image: linear-gradient(120deg, #90ee90 0%, #38f9d7 100%);
+}
+
+.menu-content-item-wrapper-hinatazaka {
+  background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+}
+
+/* 推しメン登録モーダル */
+.modal-wrapper {
+  position: fixed;
+  top: 50%;
+  left: -150%;
+  transform: translate(-50%,-50%);
+  height: 70vh;
+  width: 80vw;
+  background-image: linear-gradient(120deg, #a18cd1 0%, #fbc2eb 100%);;
+  z-index: 10000;
+}
+
+.modal-wrapper2 {
+  position: fixed;
+  top: 50%;
+  left: -150%;
+  transform: translate(-50%,-50%);
+  height: 70vh;
+  width: 80vw;
+  background-image: linear-gradient(120deg, #90ee90 0%, #38f9d7 100%);
+  z-index: 10000;
+}
+
+.modal-wrapper3 {
+  position: fixed;
+  top: 50%;
+  left: -150%;
+  transform: translate(-50%,-50%);
+  height: 70vh;
+  width: 80vw;
+  background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+  z-index: 10000;
+}
+
+.modal, .modal2, .modal3 {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.modal-content, .modal-content2, .modal-content3 {
+  margin: 0 auto;
+  height: 50vh;
+  width: 70vw;
+  background-color: aliceblue;
+  overflow: scroll;
+}
+
+.modal-question, .modal-question2, .modal-question3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.modal-skip, .modal-skip2, .modal-skip3 {
+  text-align: right;
+  cursor: pointer;
+}
+
+.modal-content-item, .modal-content-item2, .modal-content-item3 {
+  display: inline-block;
+  text-align: center;
+  width: 16%;
+  padding: 20px;
+  margin-right: 20px;
+  min-width: 150px;
+  height: 40%;
+  cursor: pointer;
+}
+
+.modal-submit, .modal-submit2, .modal-submit3 {
+  text-align: right;
+}
+
+.modal-submit button, .modal-submit2 button, .modal-submit3 button {
+  cursor: pointer;
+}
+
+/* フッター */
+.footer {
+  height: 80px;
+  background-color: #ffebcd;
+  text-align: center;
+  position: relative;
+}
+
+.footer p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
