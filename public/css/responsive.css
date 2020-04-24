@@ -95,6 +95,18 @@
     display: none;
   }
 
+  .sideCategory {
+    display: block;
+  }
+
+  .sideCategoryTitle {
+    color: black;
+    padding: 10px;
+    font-size: 24px;
+    background-color: #f0f8ff;
+    margin-top: 50px;
+  }
+
   #categorySearch {
     height: 33vh;
   }
@@ -122,5 +134,140 @@
 
   #categorySearchModalContent .nogizaka, #categorySearchModalContent .keyakizaka, #categorySearchModalContent .hinatazaka {
     display: none;
+  }
+
+  /* 推しメン登録モーダル */
+  .modal-wrapper, .modal-wrapper2, .modal-wrapper3 {
+    height: 90vh;
+    width: 90vw;
+  }
+
+  .modal, .modal2, .modal3 {
+    width: 80vw;
+  }
+
+  .modal-content, .modal-content2, .modal-content3 {
+    height: 70vh;
+    width: 80vw;
+  }
+
+  .modal-question, .modal-question2, .modal-question3 {
+    font-size: 18px;
+  }
+
+  .modal-content-item, .modal-content-item2, .modal-content-item3 {
+    width: 6%;
+    height: 18%;
+    padding: 18px;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  /* メンバー別動画 */
+  .menu-content {
+    display: none;
+  }
+
+  .responsiveMenuContent {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: -100%;
+    transform: translate(-50%,-50%);
+    height: 33vh;
+    width: 80vw;
+    z-index: 100004;
+    background-color: white;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .responsiveMenuContentModal {
+    position: relative;
+  }
+
+  .responsiveMenuContentClose {
+    position: absolute;
+    top: -5%;
+    right: 1%;
+    font-size: 28px;
+    color: #999;
+    z-index: 100004;
+  }
+
+  .responsiveMenuContentTitle {
+    height: 3vh;
+    background-color: #ffebcd;
+    position: relative;
+  }
+
+  .responsiveMenuContentTitle span {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .responsiveMenuContentNogizaka {
+    height: 10vh;
+    background-image: linear-gradient(to right, #c471f5 0%, #fa71cd 100%);
+    color: white;
+    font-weight: bold;
+    position: relative;
+  }
+
+  .responsiveMenuContentNogizaka span {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .responsiveMenuContentKeyakizaka {
+    height: 10vh;
+    background-image: linear-gradient(to right, #38f9d7 0%, #43e97b 100%);
+    color: white;
+    font-weight: bold;
+    position: relative;
+  }
+
+  .responsiveMenuContentKeyakizaka span {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .responsiveMenuContentHinatazaka {
+    height: 10vh;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    font-weight: bold;
+    position: relative;
+  }
+
+  .responsiveMenuContentHinatazaka span {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .responsiveMenuContentModalContent {
+    display: none;
+    background-color: white;
+    height: 87vh;
+    overflow-y: scroll;
+  }
+
+  .menu-content-item {
+    width: 20vw;
+    height: 14vh;
+    font-size: 14px;
+    padding: 10px;
   }
 }

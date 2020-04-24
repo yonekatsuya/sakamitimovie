@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Article;
 use App\Http\Controllers\CountUpController as CU;
 use App\Http\Controllers\SakamitiMemberCount as SMC;
+use App\Http\Controllers\CategoryCountController as CCC;
 
 class KeyakizakaMemberController extends Controller
 {
@@ -16,7 +17,8 @@ class KeyakizakaMemberController extends Controller
         $articles = Article::where('member_name','土生瑞穂')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('keyakizakaMember.habu',$param);
     }
 
@@ -26,7 +28,8 @@ class KeyakizakaMemberController extends Controller
         $articles = Article::where('member_name','原田葵')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('keyakizakaMember.harada',$param);
     }
 
@@ -36,7 +39,8 @@ class KeyakizakaMemberController extends Controller
         $articles = Article::where('member_name','藤吉夏鈴')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('keyakizakaMember.huziyoshi',$param);
     }
 
@@ -46,7 +50,8 @@ class KeyakizakaMemberController extends Controller
         $articles = Article::where('member_name','井上梨奈')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('keyakizakaMember.inoue',$param);
     }
 
@@ -56,7 +61,8 @@ class KeyakizakaMemberController extends Controller
         $articles = Article::where('member_name','石森虹花')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('keyakizakaMember.ishimori',$param);
     }
 
@@ -66,7 +72,8 @@ class KeyakizakaMemberController extends Controller
         $articles = Article::where('member_name','小林由衣')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('keyakizakaMember.kobayashi',$param);
     }
 
@@ -76,7 +83,8 @@ class KeyakizakaMemberController extends Controller
         $articles = Article::where('member_name','小池美波')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('keyakizakaMember.koike',$param);
     }
 
@@ -86,7 +94,8 @@ class KeyakizakaMemberController extends Controller
         $articles = Article::where('member_name','松田里奈')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('keyakizakaMember.matsuda',$param);
     }
 
@@ -96,7 +105,8 @@ class KeyakizakaMemberController extends Controller
         $articles = Article::where('member_name','松平璃子')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('keyakizakaMember.matsudaira',$param);
     }
 
@@ -106,7 +116,8 @@ class KeyakizakaMemberController extends Controller
         $articles = Article::where('member_name','森田ひかる')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('keyakizakaMember.morita',$param);
     }
 
@@ -116,7 +127,8 @@ class KeyakizakaMemberController extends Controller
         $articles = Article::where('member_name','守屋茜')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('keyakizakaMember.moriya',$param);
     }
 
@@ -126,7 +138,8 @@ class KeyakizakaMemberController extends Controller
         $articles = Article::where('member_name','長沢菜々香')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('keyakizakaMember.nagasawa',$param);
     }
 
@@ -136,7 +149,8 @@ class KeyakizakaMemberController extends Controller
         $articles = Article::where('member_name','尾関梨香')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('keyakizakaMember.ozeki',$param);
     }
 
@@ -146,7 +160,8 @@ class KeyakizakaMemberController extends Controller
         $articles = Article::where('member_name','渡邉理佐')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('keyakizakaMember.risa',$param);
     }
 
@@ -156,7 +171,8 @@ class KeyakizakaMemberController extends Controller
         $articles = Article::where('member_name','齋藤冬優花')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('keyakizakaMember.saito',$param);
     }
 
@@ -166,7 +182,8 @@ class KeyakizakaMemberController extends Controller
         $articles = Article::where('member_name','佐藤詩織')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('keyakizakaMember.sato',$param);
     }
 
@@ -176,7 +193,8 @@ class KeyakizakaMemberController extends Controller
         $articles = Article::where('member_name','関由美子')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('keyakizakaMember.seki',$param);
     }
 
@@ -186,7 +204,8 @@ class KeyakizakaMemberController extends Controller
         $articles = Article::where('member_name','菅井友香')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('keyakizakaMember.sugai',$param);
     }
 
@@ -196,7 +215,8 @@ class KeyakizakaMemberController extends Controller
         $articles = Article::where('member_name','武本唯衣')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('keyakizakaMember.takemoto',$param);
     }
 
@@ -206,7 +226,8 @@ class KeyakizakaMemberController extends Controller
         $articles = Article::where('member_name','田村保乃')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('keyakizakaMember.tamura',$param);
     }
 
@@ -216,7 +237,8 @@ class KeyakizakaMemberController extends Controller
         $articles = Article::where('member_name','上村莉菜')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount );
         return view('keyakizakaMember.uemura',$param);
     }
 
@@ -226,7 +248,8 @@ class KeyakizakaMemberController extends Controller
         $articles = Article::where('member_name','渡辺梨加')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('keyakizakaMember.rika',$param);
     }
 
@@ -236,7 +259,8 @@ class KeyakizakaMemberController extends Controller
         $articles = Article::where('member_name','山崎天')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('keyakizakaMember.ten',$param);
     }
 }

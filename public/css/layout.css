@@ -6,6 +6,7 @@ body {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
+  background-image: linear-gradient(to right, #fddb92 0%, #d1fdff 100%);
 }
 
 .clearfix:after {
@@ -92,7 +93,6 @@ a {
 
 /* ナビバー */
 .nav-bar {
-  /* height: 46px; */
   color: white;
 }
 
@@ -387,6 +387,10 @@ a {
   background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
 }
 
+.responsiveMenuContent {
+  display: none;
+}
+
 /* 推しメン登録モーダル */
 .modal-wrapper {
   position: fixed;
@@ -451,7 +455,7 @@ a {
   width: 16%;
   padding: 20px;
   margin-right: 20px;
-  min-width: 150px;
+  min-width: 100px;
   height: 40%;
   cursor: pointer;
 }

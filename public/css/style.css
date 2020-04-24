@@ -76,6 +76,10 @@
   font-size: 30px;
 }
 
+.sideCategory {
+  display: none;
+}
+
 .content .row1 {
   margin-bottom: 25px;
 }
@@ -210,6 +214,16 @@
   position: absolute;
   top: -2%;
   right: 0%;
+  font-size: 28px;
+  color: #999;
+  z-index: 10003;
+}
+
+#responsiveCategorySearchBack {
+  display: none;
+  position: absolute;
+  top: -2%;
+  left: 0%;
   font-size: 28px;
   color: #999;
   z-index: 10003;

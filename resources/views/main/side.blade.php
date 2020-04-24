@@ -140,4 +140,6 @@
   </div>
 
   <a class="twitter-timeline" data-lang="ja" data-height="1000" data-theme="dark" href="https://twitter.com/yone_sakamiti?ref_src=twsrc%5Etfw">Tweets by yone_sakamiti</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  @include('layout.sideCategory')
 </div>

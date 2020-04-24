@@ -47,7 +47,7 @@
               title: $title,
               link: $link,
               category: '日向坂46',
-              category_search: '日向坂スナック真緒',
+              category_search: '日向坂自撮りTV',
               member_name: '',
               description: $description
             },

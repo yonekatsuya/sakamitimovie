@@ -75,6 +75,7 @@ class SakamitiMemberCount extends Controller
         $countKeyakizakaTamura = Article::where('member_name','田村保乃')->get()->count();
         $countTen = Article::where('member_name','山崎天')->get()->count();
         $countUemura = Article::where('member_name','上村梨奈')->get()->count();
+        
         $countHamagishi = Article::where('member_name','濱岸ひより')->get()->count();
         $countHigashimura = Article::where('member_name','東村芽衣')->get()->count();
         $countKageyama = Article::where('member_name','影山優佳')->get()->count();

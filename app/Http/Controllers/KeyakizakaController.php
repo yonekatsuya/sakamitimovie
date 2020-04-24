@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Article;
 use App\Http\Controllers\CountUpController as CU;
 use App\Http\Controllers\SakamitiMemberCount as SMC;
+use App\Http\Controllers\CategoryCountController as CCC;
 
 class KeyakizakaController extends Controller
 {
@@ -14,9 +15,10 @@ class KeyakizakaController extends Controller
         $count = CU::countUp();
         $user = Auth::user();
         $articles = Article::where('category','欅坂46')->orderBy('id','desc')->paginate(20);
-        $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
+        $param = ['user'=>$user,'count'=>$count,'articles'=>$articles,'keyword'=>'','sakamiti'=>'sakamiti'];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('keyakizaka.index',$param);
     }
 }

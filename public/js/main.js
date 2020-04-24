@@ -32,17 +32,87 @@ $(function(){
     $(this).html('<i class="menu-close fas fa-times"></i>');
   });
 
-  // スマホサイズ時のメンバー別動画リンク押下時の左外コンテンツ表示処理
+  // スマホサイズ時のメンバー別動画リンク押下時のサイドメニュー表示処理
   $('.sideMenuDisp').on('click',function() {
-    $('.menu-content').stop(true).animate({
-      'left' : 0
-    },300,'linear');
-    $(this).html('<i class="menu-close fas fa-times"></i>');
+    // スマホ版のサイドメニューを表示
+    $('.responsiveMenuContent').animate({
+      'left' : '50%'
+    },300);
+    // 背景を薄くする
+    $('.header, .main-title, .nav-bar, .main-pan, .top-scroll-right, .bxslider-wrapper, .side, .content, .side-menu, .breadcrumb, .sideFormArea').css('opacity',0.3);
     // スマホ版のメニューの表示を画面上から消す
     $('.headerNavMenuContent').animate({
       'top' : '-50%'
     },200);
   });
+
+  // スマホサイズ時にサイドメニューの閉じるボタン押下時の処理
+  $('.responsiveMenuContentClose').on('click',function() {
+    // モーダルを左外に消す
+    $('.responsiveMenuContent').animate({
+      'left' : '-100%'
+    },200);
+    // 背景を元に戻す
+    $('.header, .main-title, .nav-bar, .main-pan, .top-scroll-right, .bxslider-wrapper, .side, .content, .side-menu, .breadcrumb, .sideFormArea').css('opacity',1);
+    // 各グループボタンの非表示を元にもどす
+    $('.responsiveMenuContentNogizaka, .responsiveMenuContentKeyakizaka, .responsiveMenuContentHinatazaka').css('display','block');
+    // モーダルの高さを元に戻す
+    $('.responsiveMenuContent').css({
+      'height' : '33vh',
+      'width' : '80vw'
+    });
+    // タイトルを元に戻す
+    $('.responsiveMenuContentTitle span').text('メンバー別動画');
+    $('.responsiveMenuContentTitle span').css('color','black');
+    $('.responsiveMenuContentTitle').css('background-image','');
+    // コンテンツ部分を非表示にする
+    $('.responsiveMenuContentModalContent').css('display','none');
+  });
+
+  $('.responsiveMenuContentNogizaka, .responsiveMenuContentKeyakizaka, .responsiveMenuContentHinatazaka').on('click',function() {
+    // モーダルエリアを縦に大きく伸ばす
+    $('.responsiveMenuContent').animate({
+      'height' : '90vh',
+      'width' : '90vw'
+    },300);
+    // 各ボタンの非表示
+    $('.responsiveMenuContentNogizaka, .responsiveMenuContentKeyakizaka, .responsiveMenuContentHinatazaka').css('display','none');
+    // コンテンツ部分の表示
+    $('.responsiveMenuContentModalContent').css('display','block');
+  });
+
+  // スマホサイズ時にメンバー別動画の乃木坂ボタンを押した際の処理
+  $('.responsiveMenuContentNogizaka').on('click',function() {
+    // タイトルを切り替える
+    $('.responsiveMenuContentTitle span').text('乃木坂46');
+    $('.responsiveMenuContentTitle span').css('color','white');
+    $('.responsiveMenuContentTitle').css('background-image','linear-gradient(to right, #c471f5 0%, #fa71cd 100%)');
+    // 乃木坂メンバーだけ表示
+    $('.responsiveMenuContentModalContentNogizaka').css('display','block');
+    $('.responsiveMenuContentModalContentKeyakizaka, .responsiveMenuContentModalContentHinatazaka').css('display','none');
+  })
+
+  // スマホサイズ時にメンバー別動画の欅坂ボタンを押した際の処理
+  $('.responsiveMenuContentKeyakizaka').on('click',function() {
+    // タイトルを切り替える
+    $('.responsiveMenuContentTitle span').text('欅坂46');
+    $('.responsiveMenuContentTitle span').css('color','white');
+    $('.responsiveMenuContentTitle').css('background-image','linear-gradient(to right, #38f9d7 0%, #43e97b 100%)');
+    // 欅坂メンバーだけ表示
+    $('.responsiveMenuContentModalContentKeyakizaka').css('display','block');
+    $('.responsiveMenuContentModalContentNogizaka, .responsiveMenuContentModalContentHinatazaka').css('display','none');
+  })
+
+  // スマホサイズ時にメンバー別動画の日向坂ボタンを押した際の処理
+  $('.responsiveMenuContentHinatazaka').on('click',function() {
+    // タイトルを切り替える
+    $('.responsiveMenuContentTitle span').text('日向坂46');
+    $('.responsiveMenuContentTitle span').css('color','white');
+    $('.responsiveMenuContentTitle').css('background-image','linear-gradient(to right, #4facfe 0%, #00f2fe 100%)');
+    // 日向坂メンバーだけ表示
+    $('.responsiveMenuContentModalContentHinatazaka').css('display','block');
+    $('.responsiveMenuContentModalContentNogizaka, .responsiveMenuContentModalContentKeyakizaka').css('display','none');
+  })
 
   // 左外コンテンツの「×」ボタン押下時のコンテンツ非表示処理
   $(document).on('click','.fa-times',function() {
@@ -262,23 +332,6 @@ $(function(){
       },15000);
     });
 
-    // 各トップページごとに背景色・ナビバーを切り替える
-    if($('h2:eq(0):contains("坂道グループ")').length) {
-      $('body').css('background-image','linear-gradient(to right, #fddb92 0%, #d1fdff 100%)');
-    } else if ($('h2:eq(0):contains("乃木坂")').length) {
-      $('body').css('background-image','linear-gradient(to right, #a18cd1 0%, #fbc2eb 100%)');
-      $('span:contains("乃木坂動画館")').parent().css('display','none');
-      $('.nav-bar div').css('width','50%');
-    } else if ($('h2:eq(0):contains("欅坂")').length) {
-      $('body').css('background-image','linear-gradient(to right, #90ee90 0%, #38f9d7 100%)');
-      $('span:contains("欅坂動画館")').parent().css('display','none');
-      $('.nav-bar div').css('width','50%');
-    } else if ($('h2:eq(0):contains("日向坂")').length) {
-      $('body').css('background-image','linear-gradient(to right, #89f7fe 0%, #66a6ff 100%)');
-      $('span:contains("日向坂動画館")').parent().css('display','none');
-      $('.nav-bar div').css('width','50%');
-    }
-
     // ログイン後推しメン登録モーダル表示
     if ($('#loveMemberDisp').length) {
       // 推しメン選択モーダル表示中、背景を薄くする
@@ -333,6 +386,7 @@ $(function(){
    });
 
    $(document).on('click','#responsiveCategorySearchClose',function() {
+    $('#responsiveCategorySearchBack').css('display','none');
     $('#categorySearch').animate({
       'top' : '-100%'
     },500,'linear');
@@ -340,6 +394,15 @@ $(function(){
     $('#responsiveNogizakaCategorySearch, #responsiveKeyakizakaCategorySearch, #responsiveHinatazakaCategorySearch').css('display','block');
     $('#categorySearchModalContent .responsiveNogizaka, #categorySearchModalContent .responsiveKeyakizaka, #categorySearchModalContent .responsiveHinatazaka').css('display','none');
     $('#categorySearch').css('height','33vh');
+   });
+
+   $(document).on('click','#responsiveCategorySearchBack',function() {
+    $('#responsiveCategorySearchBack').css('display','none');
+    $('#categorySearchModalContent .responsiveNogizaka ,#categorySearchModalContent .responsiveKeyakizaka, #categorySearchModalContent .responsiveHinatazaka').css('display','none');
+    $('#responsiveNogizakaCategorySearch, #responsiveKeyakizakaCategorySearch, #responsiveHinatazakaCategorySearch').css('display','block');
+    $('#categorySearch').animate({
+      'height' : '33vh'
+    },300);
    });
 
   //  カテゴリ検索モーダルのタブ切り替え
@@ -363,6 +426,7 @@ $(function(){
 
   // カテゴリ検索モーダルのレスポンシブ版タブ切り替え
   $(document).on('click','#responsiveNogizakaCategorySearch',function() {
+    $('#responsiveCategorySearchBack').css('display','block');
     $('#responsiveNogizakaCategorySearch, #responsiveKeyakizakaCategorySearch, #responsiveHinatazakaCategorySearch').css('display','none');
     $('#categorySearch').animate({
       'height' : '60vh'
@@ -372,6 +436,7 @@ $(function(){
   });
 
   $(document).on('click','#responsiveKeyakizakaCategorySearch',function() {
+    $('#responsiveCategorySearchBack').css('display','block');
     $('#responsiveNogizakaCategorySearch, #responsiveKeyakizakaCategorySearch, #responsiveHinatazakaCategorySearch').css('display','none');
     $('#categorySearch').animate({
       'height' : '60vh'
@@ -381,6 +446,7 @@ $(function(){
   });
 
   $(document).on('click','#responsiveHinatazakaCategorySearch',function() {
+    $('#responsiveCategorySearchBack').css('display','block');
     $('#responsiveNogizakaCategorySearch, #responsiveKeyakizakaCategorySearch, #responsiveHinatazakaCategorySearch').css('display','none');
     $('#categorySearch').animate({
       'height' : '60vh'

@@ -1,0 +1,11 @@
+.nav-bar div {
+  width: 50%;
+}
+
+.nav-bar div:nth-child(2) {
+  display: none;
+}
+
+body {
+  background-image: linear-gradient(to right, #90ee90 0%, #38f9d7 100%);
+}

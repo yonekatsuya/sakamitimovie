@@ -10,6 +10,7 @@ use App\Comment;
 use App\User;
 use App\Http\Controllers\CountUpController as CU;
 use App\Http\Controllers\SakamitiMemberCount as SMC;
+use App\Http\Controllers\CategoryCountController as CCC;
 
 class MainController extends Controller
 {
@@ -19,7 +20,8 @@ class MainController extends Controller
         $articles = Article::orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles,'keyword'=>'','sakamiti'=>'sakamiti'];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('main.index',$param);
     }
 
@@ -56,13 +58,12 @@ class MainController extends Controller
                     ->orWhere('title','like','%'.$request->keyword.'%')
                     ->orWhere('description','like','%'.$request->keyword.'%');
             })->orderBy('id','desc')->paginate(20);
-        $param = ['user'=>$user,'count'=>$count,'articles'=>$articles,'keyword'=>$request->keyword];
+        $param = ['user'=>$user,'count'=>$count,'articles'=>$articles,'keyword'=>$request->keyword,'sakamiti'=>'sakamiti'];
         $sakamitiMemberCount = SMC::count();
         $param = array_merge($param,$sakamitiMemberCount);
 
         // 検索元のページによって、検索結果取得後の読み込みページを分岐
         if ($request->has('sakamiti')) {
-            $param = ['user'=>$user,'count'=>$count,'articles'=>$articles,'keyword'=>$request->keyword,'sakamiti'=>'sakamiti'];
             return view('main.index',$param);
         } elseif ($request->has('nogizaka')) {
             return view('nogizaka.index',$param);
@@ -71,7 +72,6 @@ class MainController extends Controller
         } elseif ($request->has('hinatazaka')) {
             return view('hinatazaka.index',$param);
         } else {
-            $param = ['user'=>$user,'count'=>$count,'articles'=>$articles,'keyword'=>$request->keyword,'sakamiti'=>'sakamiti'];
             return view('main.index',$param);
         }
     }

@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Article;
 use App\Http\Controllers\CountUpController as CU;
 use App\Http\Controllers\SakamitiMemberCount as SMC;
+use App\Http\Controllers\CategoryCountController as CCC;
 
 class HinatazakaMemberController extends Controller
 {
@@ -16,7 +17,8 @@ class HinatazakaMemberController extends Controller
         $articles = Article::where('member_name','濱岸ひより')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('hinatazakaMember.hamagishi',$param);
     }
 
@@ -26,7 +28,8 @@ class HinatazakaMemberController extends Controller
         $articles = Article::where('member_name','東村芽依')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('hinatazakaMember.higashimura',$param);
     }
 
@@ -36,7 +39,8 @@ class HinatazakaMemberController extends Controller
         $articles = Article::where('member_name','影山優佳')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('hinatazakaMember.kageyama',$param);
     }
 
@@ -46,7 +50,8 @@ class HinatazakaMemberController extends Controller
         $articles = Article::where('member_name','上村ひなの')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('hinatazakaMember.kamimura',$param);
     }
 
@@ -56,7 +61,8 @@ class HinatazakaMemberController extends Controller
         $articles = Article::where('member_name','金村美玖')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('hinatazakaMember.kanemura',$param);
     }
 
@@ -66,7 +72,8 @@ class HinatazakaMemberController extends Controller
         $articles = Article::where('member_name','加藤史帆')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('hinatazakaMember.kato',$param);
     }
 
@@ -76,7 +83,8 @@ class HinatazakaMemberController extends Controller
         $articles = Article::where('member_name','河田陽菜')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('hinatazakaMember.kawata',$param);
     }
 
@@ -86,7 +94,8 @@ class HinatazakaMemberController extends Controller
         $articles = Article::where('member_name','小坂菜緒')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('hinatazakaMember.kosaka',$param);
     }
 
@@ -95,6 +104,9 @@ class HinatazakaMemberController extends Controller
         $user = Auth::user();
         $articles = Article::where('member_name','佐々木久美')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
+        $sakamitiMemberCount = SMC::count();
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('hinatazakaMember.kumi',$param);
     }
 
@@ -104,7 +116,8 @@ class HinatazakaMemberController extends Controller
         $articles = Article::where('member_name','松田好花')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('hinatazakaMember.konoka',$param);
     }
 
@@ -114,7 +127,8 @@ class HinatazakaMemberController extends Controller
         $articles = Article::where('member_name','佐々木美玲')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('hinatazakaMember.mirei',$param);
     }
 
@@ -124,7 +138,8 @@ class HinatazakaMemberController extends Controller
         $articles = Article::where('member_name','宮田愛萌')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('hinatazakaMember.manamo',$param);
     }
 
@@ -134,7 +149,8 @@ class HinatazakaMemberController extends Controller
         $articles = Article::where('member_name','丹生明里')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('hinatazakaMember.nibu',$param);
     }
 
@@ -144,7 +160,8 @@ class HinatazakaMemberController extends Controller
         $articles = Article::where('member_name','齊藤京子')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('hinatazakaMember.saito',$param);
     }
 
@@ -154,7 +171,8 @@ class HinatazakaMemberController extends Controller
         $articles = Article::where('member_name','高本彩花')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('hinatazakaMember.takamoto',$param);
     }
 
@@ -164,7 +182,8 @@ class HinatazakaMemberController extends Controller
         $articles = Article::where('member_name','高瀬愛奈')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('hinatazakaMember.takase',$param);
     }
 
@@ -174,7 +193,8 @@ class HinatazakaMemberController extends Controller
         $articles = Article::where('member_name','富田鈴花')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('hinatazakaMember.tomita',$param);
     }
 
@@ -184,7 +204,8 @@ class HinatazakaMemberController extends Controller
         $articles = Article::where('member_name','潮紗理菜')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('hinatazakaMember.ushio',$param);
     }
 
@@ -194,7 +215,8 @@ class HinatazakaMemberController extends Controller
         $articles = Article::where('member_name','渡邉美穂')->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('hinatazakaMember.miho',$param);
     }
 }
