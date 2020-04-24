@@ -10,7 +10,7 @@
       <div class="item"><a href="javascript:void(0)" class="loveRegister">推しメン登録</a></div>
       <div class="item"><a href="{{route('user.logout')}}">ログアウト</a></div>
       @if ($user->name === 'yone' && $user->email === 'seiryo.soccer.ky@i.softbank.jp')
-        <div class="item"><a href="http://192.168.33.14/laravel_lessons/development/sakamiti_com/public/admin">管理者ページ</a></div>
+        <div class="item"><a href="{{route('getAdmin')}}">管理者ページ</a></div>
       @endif
     @else
       <div class="item"><a href="{{route('user.signup')}}">新規登録</a></div>

@@ -42,13 +42,13 @@
                   'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
               },
             type: 'POST',
-            url: 'http://192.168.33.14/laravel_lessons/development/sakamiti_com/public/admin',
+            url: "{{route('postAdmin')}}",
             data: {
               title: $title,
               link: $link,
-              category: '日向坂46',
-              category_search: '日向坂自撮りTV',
-              member_name: '',
+              category: '乃木坂46',
+              category_search: '',
+              member_name: '秋元真夏',
               description: $description
             },
           }).done(function() {

@@ -26,7 +26,5 @@ class AdminController extends Controller
         $item->member_name = $request->member_name;
         $item->description = $request->description;
         $item->save();
-        // $param = ['user'=>$user];
-        // return view('admin.index',$param);
     }
 }

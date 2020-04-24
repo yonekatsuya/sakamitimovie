@@ -1,4 +1,4 @@
-<form id="modalSideForm" class="sideForm" method="post" action="http://192.168.33.14/laravel_lessons/development/sakamiti_com/public/search">
+<form id="modalSideForm" class="sideForm" method="post" action="{{route('postSearch')}}">
     @csrf
     <div class="sideFormArea">
       @if (isset($keyword))

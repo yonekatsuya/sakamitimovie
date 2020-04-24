@@ -6,7 +6,7 @@
 
 @section('content')
 
-<form class="sideForm responsiveSideForm" method="post" action="http://192.168.33.14/laravel_lessons/development/sakamiti_com/public/search">
+<form class="sideForm responsiveSideForm" method="post" action="{{route('postSearch')}}">
     @csrf
     <div class="sideFormArea">
       @if (isset($keyword))
@@ -24,7 +24,7 @@
 
 <!-- トップスクロール -->
 <div class="top-scroll-right">
-    <img src="http://192.168.33.14/laravel_lessons/development/sakamiti_com/public/image/keyakizaka/kobayasi.png" height="100" width="100">
+    <img src="{{asset('image/keyakizaka/kobayasi.png')}}" height="100" width="100">
 </div>
 
 <!-- コンテンツ -->

@@ -34,7 +34,7 @@
     <li>
       @if (Auth::check())
         @if ($user->name === 'yone' && $user->email === 'seiryo.soccer.ky@i.softbank.jp')
-          <a href="http://192.168.33.14/laravel_lessons/development/sakamiti_com/public/admin">管理者ページ</a>
+          <a href="{{route('getAdmin')}}">管理者ページ</a>
         @endif
       @endif
     </li>

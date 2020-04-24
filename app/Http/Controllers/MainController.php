@@ -32,7 +32,8 @@ class MainController extends Controller
         $loveMemberDispFlag = '';
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles,'keyword'=>'','loveMemberDispFlag'=>'','sakamiti'=>'sakamiti'];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('main.index',$param);
     }
 
@@ -60,7 +61,8 @@ class MainController extends Controller
             })->orderBy('id','desc')->paginate(20);
         $param = ['user'=>$user,'count'=>$count,'articles'=>$articles,'keyword'=>$request->keyword,'sakamiti'=>'sakamiti'];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
 
         // 検索元のページによって、検索結果取得後の読み込みページを分岐
         if ($request->has('sakamiti')) {
@@ -82,7 +84,8 @@ class MainController extends Controller
         $articles = Article::where('category_search',$category_name)->orderBy('id','desc')->paginate(20);
         $param = ['count'=>$count,'user'=>$user,'articles'=>$articles,'sakamiti'=>'sakamiti'];
         $sakamitiMemberCount = SMC::count();
-        $param = array_merge($param,$sakamitiMemberCount);
+        $categoryCount = CCC::count();
+        $param = array_merge($param,$sakamitiMemberCount,$categoryCount);
         return view('main.index',$param);
     }
 

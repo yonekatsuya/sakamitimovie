@@ -13,10 +13,8 @@
       </div>
       <div class="menu-content-right-content">
         <div class="menu-content-item-wrapper-nogizaka">
-
-        <?php define('NogizakaUrl2','http://192.168.33.14/laravel_lessons/development/sakamiti_com/public/') ?>
           
-          <a href="{{NogizakaUrl2}}nogizakaAkimoto">
+          <a href="{{route('nogizakaAkimoto')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/akimoto.png')}}" width="100%" height="100%">
               <p>
@@ -24,7 +22,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaAsuka">
+          <a href="{{route('nogizakaAsuka')}}">
             <div class="menu-content-item">
             <img src="{{asset('/image/nogizaka/asuka.png')}}" width="100%" height="100%">
             <p>
@@ -32,7 +30,7 @@
             </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaAyane">
+          <a href="{{route('nogizakaAyane')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/ayane.png')}}" width="100%" height="100%">
               <p>
@@ -40,7 +38,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaSakura">
+          <a href="{{route('nogizakaSakura')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/endo.png')}}" width="100%" height="100%">
               <p>
@@ -48,7 +46,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaHayakawa">
+          <a href="{{route('nogizakaHayakawa')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/hayakawa.png')}}" width="100%" height="100%">
               <p>
@@ -56,7 +54,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaHiguchi">
+          <a href="{{route('nogizakaHiguchi')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/higuti.png')}}" width="100%" height="100%">
               <p>
@@ -64,7 +62,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaHori">
+          <a href="{{route('nogizakaHori')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/hori.png')}}" width="100%" height="100%">
               <p>
@@ -72,7 +70,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaHoshino">
+          <a href="{{route('nogizakaHoshino')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/hoshino.png')}}" width="100%" height="100%">
               <p>
@@ -80,7 +78,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaIkuta">
+          <a href="{{route('nogizakaIkuta')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/ikuta.png')}}" width="100%" height="100%">
               <p>
@@ -88,7 +86,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaKaede">
+          <a href="{{route('nogizakaKaede')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/kaede.png')}}" width="100%" height="100%">
               <p>
@@ -96,7 +94,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaKakehashi">
+          <a href="{{route('nogizakaKakehashi')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/kakehasi.png')}}" width="100%" height="100%">
               <p>
@@ -104,7 +102,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaKaki">
+          <a href="{route('nogizakaKaki')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/kaki.png')}}" width="100%" height="100%">
               <p>
@@ -112,7 +110,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaKanagawa">
+          <a href="{{route('nogizakaKanagawa')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/kanagawa.png')}}" width="100%" height="100%">
               <p>
@@ -120,7 +118,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaKitagawa">
+          <a href="{{route('nogizakaKitagawa')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/kitagawa.png')}}" width="100%" height="100%">
               <p>
@@ -128,7 +126,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaKitano">
+          <a href="{{route('nogizakaKitano')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/kitano.png')}}" width="100%" height="100%">
               <p>
@@ -136,7 +134,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaKotoko">
+          <a href="{{route('nogizakaKotoko')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/kotoko.png')}}" width="100%" height="100%">
               <p>
@@ -144,7 +142,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaShiori">
+          <a href="{{route('nogizakaShiori')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/kubo.png')}}" width="100%" height="100%">
               <p>
@@ -152,7 +150,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaMatsumura">
+          <a href="{{route('nogizakaMatsumura')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/matsumura.png')}}" width="100%" height="100%">
               <p>
@@ -160,7 +158,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaMomoko">
+          <a href="{{route('nogizakaMomoko')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/momoko.png')}}" width="100%" height="100%">
               <p>
@@ -168,7 +166,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaMukai">
+          <a href="{{route('nogizakaMukai')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/mukai.png')}}" width="100%" height="100%">
               <p>
@@ -176,7 +174,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaNakada">
+          <a href="{{route('nogizakaNakada')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/nakada.png')}}" width="100%" height="100%">
               <p>
@@ -184,7 +182,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaNakamura">
+          <a href="{{route('nogizakaNakamura')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/nakamura.png')}}" width="100%" height="100%">
               <p>
@@ -192,7 +190,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaRanze">
+          <a href="{{route('nogizakaRanze')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/ranze.png')}}" width="100%" height="100%">
               <p>
@@ -200,7 +198,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaRenka">
+          <a href="{{route('nogizakaRenka')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/renka.png')}}" width="100%" height="100%">
               <p>
@@ -208,7 +206,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaRiria">
+          <a href="{{route('nogizakaRiria')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/riria.png')}}" width="100%" height="100%">
               <p>
@@ -216,7 +214,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaSayuri">
+          <a href="{{route('nogizakaSayuri')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/sayuri.png')}}" width="100%" height="100%">
               <p>
@@ -224,7 +222,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaSeimiya">
+          <a href="{{route('nogizakaSeimiya')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/seimiya.png')}}" width="100%" height="100%">
               <p>
@@ -232,7 +230,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaShibata">
+          <a href="{{route('nogizakaShibata')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/sibata.png')}}" width="100%" height="100%">
               <p>
@@ -240,7 +238,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaShinuchi">
+          <a href="{{route('nogizakaShinuchi')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/sinuti.png')}}" width="100%" height="100%">
               <p>
@@ -248,7 +246,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaShiraishi">
+          <a href="{{route('nogizakaShiraishi')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/siraisi.png')}}" width="100%" height="100%">
               <p>
@@ -256,7 +254,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaTakayama">
+          <a href="{{route('nogizakaTakayama')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/takayama.png')}}" width="100%" height="100%">
               <p>
@@ -264,7 +262,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaSakaguchi">
+          <a href="{{route('nogizakaSakaguchi')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/tamami.png')}}" width="100%" height="100%">
               <p>
@@ -272,7 +270,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaTamura">
+          <a href="{{route('nogizakaTamura')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/tamura.png')}}" width="100%" height="100%">
               <p>
@@ -280,7 +278,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaTsutsui">
+          <a href="{{route('nogizakaTsutsui')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/tsutsui.png')}}" width="100%" height="100%">
               <p>
@@ -288,7 +286,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaUmezawa">
+          <a href="{{route('nogizakaUmezawa')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/ume.png')}}" width="100%" height="100%">
               <p>
@@ -296,7 +294,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaWada">
+          <a href="{{route('nogizakaWada')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/wada.png')}}" width="100%" height="100%">
               <p>
@@ -304,7 +302,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaMiria">
+          <a href="{{route('nogizakaMiria')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/watanabe.png')}}" width="100%" height="100%">
               <p>
@@ -312,7 +310,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaYakubo">
+          <a href="{{route('nogizakaYakubo')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/yakubo.png')}}" width="100%" height="100%">
               <p>
@@ -320,7 +318,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaYamashita">
+          <a href="{{route('nogizakaYamashita')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/yamasita.png')}}" width="100%" height="100%">
               <p>
@@ -328,7 +326,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaYamasaki">
+          <a href="{{route('nogizakaYamasaki')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/yamazaki.png')}}" width="100%" height="100%">
               <p>
@@ -336,7 +334,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaYoda">
+          <a href="{{route('nogizakaYoda')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/yoda.png')}}" width="100%" height="100%">
               <p>
@@ -344,7 +342,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaYoshida">
+          <a href="{{route('nogizakaYoshida')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/yosida.png')}}" width="100%" height="100%">
               <p>
@@ -352,7 +350,7 @@
               </p>
             </div>
           </a>
-          <a href="{{NogizakaUrl2}}nogizakaZyunna">
+          <a href="{{route('nogizakaZyunna')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/zyunna.png')}}" width="100%" height="100%">
               <p>
@@ -362,10 +360,8 @@
           </a>
         </div>
 
-        <?php define('KeyakizakaUrl2','http://192.168.33.14/laravel_lessons/development/sakamiti_com/public/') ?>
-
         <div class="menu-content-item-wrapper-keyakizaka">
-          <a href="{{KeyakizakaUrl2}}keyakizakaHabu">
+          <a href="{{route('keyakizakaHabu')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/habu.png')}}" width="100%" height="100%">
               <p>
@@ -373,7 +369,7 @@
               </p>
             </div>
           </a>
-          <a href="{{KeyakizakaUrl2}}keyakizakaHarada">
+          <a href="{{route('keyakizakaHarada')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/harada.png')}}" width="100%" height="100%">
               <p>
@@ -381,7 +377,7 @@
               </p>
             </div>
           </a>
-          <a href="{{KeyakizakaUrl2}}keyakizakaHuziyoshi">
+          <a href="{{route('keyakizakaHuziyoshi')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/huziyosi.png')}}" width="100%" height="100%">
               <p>
@@ -389,7 +385,7 @@
               </p>
             </div>
           </a>
-          <a href="{{KeyakizakaUrl2}}keyakizakaInoue">
+          <a href="{{route('keyakizakaInoue')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/inoue.png')}}" width="100%" height="100%">
               <p>
@@ -397,7 +393,7 @@
               </p>
             </div>
           </a>
-          <a href="{{KeyakizakaUrl2}}keyakizakaIshimori">
+          <a href="{{route('keyakizakaIshimori')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/isimori.png')}}" width="100%" height="100%">
               <p>
@@ -405,7 +401,7 @@
               </p>
             </div>
           </a>
-          <a href="{{KeyakizakaUrl2}}keyakizakaKobayashi">
+          <a href="{{route('keyakizakaKobayashi')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/kobayasi.png')}}" width="100%" height="100%">
               <p>
@@ -413,7 +409,7 @@
               </p>
             </div>
           </a>
-          <a href="{{KeyakizakaUrl2}}keyakizakaKoike">
+          <a href="{{route('keyakizakaKoike')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/koike.png')}}" width="100%" height="100%">
               <p>
@@ -421,7 +417,7 @@
               </p>
             </div>
           </a>
-          <a href="{{KeyakizakaUrl2}}keyakizakaMatsudaira">
+          <a href="{{route('keyakizakaMatsudaira')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/matsudaira.png')}}" width="100%" height="100%">
               <p>
@@ -429,7 +425,7 @@
               </p>
             </div>
           </a>
-          <a href="{{KeyakizakaUrl2}}keyakizakaMorita">
+          <a href="{{route('keyakizakaMorita')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/morita.png')}}" width="100%" height="100%">
               <p>
@@ -437,7 +433,7 @@
               </p>
             </div>
           </a>
-          <a href="{{KeyakizakaUrl2}}keyakizakaMoriya">
+          <a href="{{route('keyakizakaMoriya')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/moriya.png')}}" width="100%" height="100%">
               <p>
@@ -445,7 +441,7 @@
               </p>
             </div>
           </a>
-          <a href="{{KeyakizakaUrl2}}keyakizakaNagasawa">
+          <a href="{{route('keyakizakaNagasawa')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/nagasawa.png')}}" width="100%" height="100%">
               <p>
@@ -453,7 +449,7 @@
               </p>
             </div>
           </a>
-          <a href="{{KeyakizakaUrl2}}keyakizakaOzeki">
+          <a href="{{route('keyakizakaOzeki')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/ozeki.png')}}" width="100%" height="100%">
               <p>
@@ -461,7 +457,7 @@
               </p>
             </div>
           </a>
-          <a href="{{KeyakizakaUrl2}}keyakizakaRisa">
+          <a href="{{route('keyakizakaRisa')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/risa.png')}}" width="100%" height="100%">
               <p>
@@ -469,7 +465,7 @@
               </p>
             </div>
           </a>
-          <a href="{{KeyakizakaUrl2}}keyakizakaSaito">
+          <a href="{{route('keyakizakaSaito')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/saito.png')}}" width="100%" height="100%">
               <p>
@@ -477,7 +473,7 @@
               </p>
             </div>
           </a>
-          <a href="{{KeyakizakaUrl2}}keyakizakaSato">
+          <a href="{{route('keyakizakaSato')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/sato.png')}}" width="100%" height="100%">
               <p>
@@ -485,7 +481,7 @@
               </p>
             </div>
           </a>
-          <a href="{{KeyakizakaUrl2}}keyakizakaSeki">
+          <a href="{{route('keyakizakaSeki')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/seki.png')}}" width="100%" height="100%">
               <p>
@@ -493,7 +489,7 @@
               </p>
             </div>
           </a>
-          <a href="{{KeyakizakaUrl2}}keyakizakaSugai">
+          <a href="{{route('keyakizakaSugai')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/sugai.png')}}" width="100%" height="100%">
               <p>
@@ -501,7 +497,7 @@
               </p>
             </div>
           </a>
-          <a href="{{KeyakizakaUrl2}}keyakizakaTakemoto">
+          <a href="{{route('keyakizakaTakemoto')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/takemoto.png')}}" width="100%" height="100%">
               <p>
@@ -509,7 +505,7 @@
               </p>
             </div>
           </a>
-          <a href="{{KeyakizakaUrl2}}keyakizakaTamura">
+          <a href="{{route('keyakizakaTamura')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/tamura.png')}}" width="100%" height="100%">
               <p>
@@ -517,7 +513,7 @@
               </p>
             </div>
           </a>
-          <a href="{{KeyakizakaUrl2}}keyakizakaUemura">
+          <a href="{{route('keyakizakaUemura')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/uemura.png')}}" width="100%" height="100%">
               <p>
@@ -525,7 +521,7 @@
               </p>
             </div>
           </a>
-          <a href="{{KeyakizakaUrl2}}keyakizakaRika">
+          <a href="{{route('keyakizakaRika')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/watanabe.png')}}" width="100%" height="100%">
               <p>
@@ -533,7 +529,7 @@
               </p>
             </div>
           </a>
-          <a href="{{KeyakizakaUrl2}}keyakizakaTen">
+          <a href="{{route('keyakizakaTen')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/yamasaki.png')}}" width="100%" height="100%">
               <p>
@@ -543,10 +539,8 @@
           </a>
         </div>
 
-        <?php define('HinatazakaUrl2','http://192.168.33.14/laravel_lessons/development/sakamiti_com/public/') ?>
-
         <div class="menu-content-item-wrapper-hinatazaka">
-          <a href="{{HinatazakaUrl2}}hinatazakaMiho">
+          <a href="{{route('hinatazakaMiho')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/watanabe.png')}}" width="100%" height="100%">
               <p>
@@ -554,7 +548,7 @@
               </p>
             </div>
           </a>
-          <a href="{{HinatazakaUrl2}}hinatazakaTomita">
+          <a href="{{route('hinatazakaTomita')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/tomita.png')}}" width="100%" height="100%">
               <p>
@@ -562,7 +556,7 @@
               </p>
             </div>
           </a>
-          <a href="{{HinatazakaUrl2}}hinatazakaTakase">
+          <a href="{{route('hinatazakaTakase')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/takase.png')}}" width="100%" height="100%">
               <p>
@@ -570,7 +564,7 @@
               </p>
             </div>
           </a>
-          <a href="{{HinatazakaUrl2}}hinatazakaTakamoto">
+          <a href="{{route('hinatazakaTakamoto')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/takamoto.png')}}" width="100%" height="100%">
               <p>
@@ -578,7 +572,7 @@
               </p>
             </div>
           </a>
-          <a href="{{HinatazakaUrl2}}hinatazakaSaito">
+          <a href="{{route('hinatazakaSaito')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/saito.png')}}" width="100%" height="100%">
               <p>
@@ -586,7 +580,7 @@
               </p>
             </div>
           </a>
-          <a href="{{HinatazakaUrl2}}hinatazakaNibu">
+          <a href="{{route('hinatazakaNibu')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/nibu.png')}}" width="100%" height="100%">
               <p>
@@ -594,7 +588,7 @@
               </p>
             </div>
           </a>
-          <a href="{{HinatazakaUrl2}}hinatazakaMirei">
+          <a href="{{route('hinatazakaMirei')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/mirei.png')}}" width="100%" height="100%">
               <p>
@@ -602,7 +596,7 @@
               </p>
             </div>
           </a>
-          <a href="{{HinatazakaUrl2}}hinatazakaKumi">
+          <a href="{{route('hinatazakaKumi')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/kumi.png')}}" width="100%" height="100%">
               <p>
@@ -610,7 +604,7 @@
               </p>
             </div>
           </a>
-          <a href="{{HinatazakaUrl2}}hinatazakaKosaka">
+          <a href="{{route('hinatazakaKosaka')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/kosaka.png')}}" width="100%" height="100%">
               <p>
@@ -618,7 +612,7 @@
               </p>
             </div>
           </a>
-          <a href="{{HinatazakaUrl2}}hinatazakaKawata">
+          <a href="{{route('hinatazakaKawata')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/kawata.png')}}" width="100%" height="100%">
               <p>
@@ -626,7 +620,7 @@
               </p>
             </div>
           </a>
-          <a href="{{HinatazakaUrl2}}hinatazakaKato">
+          <a href="{{route('hinatazakaKato')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/kato.png')}}" width="100%" height="100%">
               <p>
@@ -634,7 +628,7 @@
               </p>
             </div>
           </a>
-          <a href="{{HinatazakaUrl2}}hinatazakaKamimura">
+          <a href="{{route('hinatazakaKamimura')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/kamimura.png')}}" width="100%" height="100%">
               <p>
@@ -642,7 +636,7 @@
               </p>
             </div>
           </a>
-          <a href="{{HinatazakaUrl2}}hinatazakaKageyama">
+          <a href="{{route('hinatazakaKageyama')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/kageyama.png')}}" width="100%" height="100%">
               <p>
@@ -650,7 +644,7 @@
               </p>
             </div>
           </a>
-          <a href="{{HinatazakaUrl2}}hinatazakaKonoka">
+          <a href="{{route('hinatazakaKonoka')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/matsuda.png')}}" width="100%" height="100%">
               <p>
@@ -658,7 +652,7 @@
               </p>
             </div>
           </a>
-          <a href="{{HinatazakaUrl2}}hinatazakaHigashimura">
+          <a href="{{route('hinatazakaHigashimura')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/higasimura.png')}}" width="100%" height="100%">
               <p>
@@ -666,7 +660,7 @@
               </p>
             </div>
           </a>
-          <a href="{{HinatazakaUrl2}}hinatazakaKanemura">
+          <a href="{{route('hinatazakaKanemura')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/kanemura.png')}}" width="100%" height="100%">
               <p>
@@ -674,7 +668,7 @@
               </p>
             </div>
           </a>
-          <a href="{{HinatazakaUrl2}}hinatazakaUshio">
+          <a href="{{route('hinatazakaUshio')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/usio.png')}}" width="100%" height="100%">
               <p>
@@ -682,7 +676,7 @@
               </p>
             </div>
           </a>
-          <a href="{{HinatazakaUrl2}}hinatazakaManamo">
+          <a href="{{route('hinatazakaManamo')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/miyata.png')}}" width="100%" height="100%">
               <p>
@@ -690,7 +684,7 @@
               </p>
             </div>
           </a>
-          <a href="{{HinatazakaUrl2}}hinatazakaHamagishi">
+          <a href="{{route('hinatazakaHamagishi')}}">
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/hamagisi.png')}}" width="100%" height="100%">
               <p>
