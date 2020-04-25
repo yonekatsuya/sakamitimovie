@@ -21,6 +21,8 @@
   </p>
   <ul>
     <li id="categorySearchBtn">カテゴリ検索</li>
+    <li><a href="{{route('auth.login')}}">ログイン</a></li>
+    <li><a href="{{route('auth.logout')}}">ログアウト</a></li>
     <li><a href="{{route('user.index')}}">ユーザー一覧</a></li>
     <li><a href="{{route('user.loveMemberIndex')}}">推しメンで繋がる</a></li>
     <li><a href="{{route('main.chat')}}">チャット</a></li>

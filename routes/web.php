@@ -65,7 +65,12 @@ Route::get('categorySearch/{category_name}','MainController@categorySearch')->na
 // 認証関連のルーティング一覧
 Auth::routes();
 
-// Route::get('/home', 'HomeController@index')->name('home');
+// ログインURL
+Route::get('auth/twitter', 'Auth\TwitterController@redirectToProvider')->name('auth.login');
+// コールバックURL
+Route::get('auth/twitter/callback', 'Auth\TwitterController@handleProviderCallback')->name('auth.callback');
+// ログアウトURL
+Route::get('auth/twitter/logout', 'Auth\TwitterController@logout')->name('auth.logout');
 
 
 
