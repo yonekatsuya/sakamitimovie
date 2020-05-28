@@ -6,7 +6,7 @@ body {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-  background-image: linear-gradient(to right, #fddb92 0%, #d1fdff 100%);
+  background-color: #ffffe0;
 }
 
 .clearfix:after {
@@ -34,7 +34,7 @@ a {
 .header {
   font-size: 13px;
   height: 27px;
-  border-bottom: 1px solid #7e1184;
+  border-bottom: 1px solid #d1a3ff;
 }
 
 .header p {
@@ -59,7 +59,14 @@ a {
 .header li {
   float: left;
   display: inline-block;
-  padding-right: 30px;
+  padding-right: 15px;
+  padding-left: 15px;
+  cursor: pointer;
+  border-left: 1px solid #b0c4de;
+}
+
+.header li:hover {
+  opacity: 0.7;
 }
 
 .header #headerMenuBar {
@@ -70,10 +77,10 @@ a {
 
 /* 全体共通見出し */
 .main-title {
-  /* height: 98px; */
   padding-left: 100px;
   max-width: 1300px;
   margin: 0 auto;
+  font-family: 'ヒラギノ角ゴ ProN W6';
 }
 
 .main-title:hover {
@@ -367,6 +374,10 @@ a {
   cursor: pointer;
 }
 
+.menu-content-item label span {
+  font-weight: bold;
+}
+
 .menu-content-item:hover {
   opacity: 0.7;
 }
@@ -470,8 +481,8 @@ a {
 
 /* フッター */
 .footer {
-  height: 80px;
-  background-color: #ffebcd;
+  height: 40px;
+  background-color: white;
   text-align: center;
   position: relative;
 }

@@ -4,6 +4,11 @@ $(function(){
   //   mode: 'fade'
   // });
 
+  // 動画アイテム内のグループ名表示部分の背景色をグループ名によって変える
+  $('.content .category:contains("乃木坂46")').css('background-image','linear-gradient(to right, #c471f5 0%, #fa71cd 100%)');
+  $('.content .category:contains("欅坂46")').css('background-image','linear-gradient(to right, #38f9d7 0%, #43e97b 100%)');
+  $('.content .category:contains("日向坂46")').css('background-image','linear-gradient(to right, #4facfe 0%, #00f2fe 100%)');
+
   // 画面右下の推しメン画像をマウスホバーした時に、装飾をつける
   $('.top-scroll-right img').hover(
     function() {
@@ -315,22 +320,22 @@ $(function(){
 
 
     // キーワード入力して送信後、ニコ生風にメッセージが左から右に流れていく
-    $('#message-flow-submit').on('click',function() {
-      var message = $('#message-flow').val();
-      $('#message-flow').val('');
-      var message = `<p>${message}</p>`;
-      $('#flow').html(message);
-      $('#flow').css({
-        position: 'fixed',
-        top: '5%',
-        left: '-30%',
-        color: 'red',
-        fontWeight: 'bold'
-      });
-      $('#flow').stop(true).animate({
-        left: '150%'
-      },15000);
-    });
+    // $('#message-flow-submit').on('click',function() {
+    //   var message = $('#message-flow').val();
+    //   $('#message-flow').val('');
+    //   var message = `<p>${message}</p>`;
+    //   $('#flow').html(message);
+    //   $('#flow').css({
+    //     position: 'fixed',
+    //     top: '5%',
+    //     left: '-30%',
+    //     color: 'red',
+    //     fontWeight: 'bold'
+    //   });
+    //   $('#flow').stop(true).animate({
+    //     left: '150%'
+    //   },15000);
+    // });
 
     // ログイン後推しメン登録モーダル表示
     if ($('#loveMemberDisp').length) {
@@ -343,30 +348,30 @@ $(function(){
     }
 
     // 検索フォームにカーソルが当たった際のアニメーション
-    $('.sideInput').on('focus',function() {
-      $('.header, .main-title, .nav-bar, .main-pan, .top-scroll-right, .bxslider-wrapper, .side, .content, .side-menu, .breadcrumb').css('opacity',0.3);
-      $('#modalSideForm').animate({
-        'top' : '50%',
-        'width' : '25vw'
-      },500,'linear');
-    });
+    // $('.sideInput').on('focus',function() {
+    //   $('.header, .main-title, .nav-bar, .main-pan, .top-scroll-right, .bxslider-wrapper, .side, .content, .side-menu, .breadcrumb').css('opacity',0.3);
+    //   $('#modalSideForm').animate({
+    //     'top' : '50%',
+    //     'width' : '25vw'
+    //   },500,'linear');
+    // });
 
-    $('.modalSideInput').on('focus',function() {
-      $('#modalSideForm').addClass('dummy');
-    });
+    // $('.modalSideInput').on('focus',function() {
+    //   $('#modalSideForm').addClass('dummy');
+    // });
 
     // 検索フォーム以外をクリックした時の処理
-    $(document).on('click',function(e) {
-        if(!$(e.target).closest('#modalSideForm').length) {
-          if ($('#modalSideForm').hasClass('dummy')) {
-            $('.header, .main-title, .nav-bar, .main-pan, .top-scroll-right, .bxslider-wrapper, .side, .content, .side-menu, .breadcrumb').css('opacity',1);
-            $('#modalSideForm').animate({
-              'top' : '-10%'
-            },300,'linear');
-            $('#modalSideForm').removeClass('dummy');
-          }
-        }
-   });
+  //   $(document).on('click',function(e) {
+  //       if(!$(e.target).closest('#modalSideForm').length) {
+  //         if ($('#modalSideForm').hasClass('dummy')) {
+  //           $('.header, .main-title, .nav-bar, .main-pan, .top-scroll-right, .bxslider-wrapper, .side, .content, .side-menu, .breadcrumb').css('opacity',1);
+  //           $('#modalSideForm').animate({
+  //             'top' : '-10%'
+  //           },300,'linear');
+  //           $('#modalSideForm').removeClass('dummy');
+  //         }
+  //       }
+  //  });
 
    $(document).on('click','#categorySearchBtn',function() {
      $('#categorySearch').animate({
@@ -467,4 +472,255 @@ $(function(){
       'top' : '-50%'
     },200);
    });
+
+  //  「ユーザー一覧」押下時の処理
+  $(document).on('click','#userIndex',function() {
+    $('.header, .main-title, .nav-bar, .main-pan, .top-scroll-right, .bxslider-wrapper, .side, .content, .side-menu, .breadcrumb').css('opacity',0.3);
+    $('.userIndex').animate({
+      'top' : '50%'
+    },300);
+
+  });
+
+  // 「ユーザー一覧」モーダルの閉じるボタン押下時の処理
+  $(document).on('click','.userIndexClose',function() {
+    $('.header, .main-title, .nav-bar, .main-pan, .top-scroll-right, .bxslider-wrapper, .side, .content, .side-menu, .breadcrumb').css('opacity',1);
+    $('.userIndex').animate({
+      'top' : '-100%'
+    },300);
+  });
+
+  // 「推しメンで繋がる」押下時の処理
+  $(document).on('click','#userLoveMemberIndex',function() {
+    $('.header, .main-title, .nav-bar, .main-pan, .top-scroll-right, .bxslider-wrapper, .side, .content, .side-menu, .breadcrumb').css('opacity',0.3);
+    $('.userLoveMemberIndex').animate({
+      'top' : '50%'
+    },300);
+  });
+
+  // 「推しメンで繋がる」モーダルの乃木坂タブ押下時の処理
+  $(document).on('click','.userLoveMemberIndexNavNogizaka',function() {
+    $('.userLoveMemberIndexContentNogizaka').css('display','block');
+    $('.userLoveMemberIndexContentKeyakizaka, .userLoveMemberIndexContentHinatazaka').css('display','none');
+  });
+
+  // 「推しメンで繋がる」モーダルの欅坂タブ押下時の処理
+  $(document).on('click','.userLoveMemberIndexNavKeyakizaka',function() {
+    $('.userLoveMemberIndexContentKeyakizaka').css('display','block');
+    $('.userLoveMemberIndexContentNogizaka, .userLoveMemberIndexContentHinatazaka').css('display','none');
+  });
+
+  // 「推しメンで繋がる」モーダルの日向坂タブ押下時の処理
+  $(document).on('click','.userLoveMemberIndexNavHinatazaka',function() {
+    $('.userLoveMemberIndexContentHinatazaka').css('display','block');
+    $('.userLoveMemberIndexContentNogizaka, .userLoveMemberIndexContentKeyakizaka').css('display','none');
+  });
+
+  // 「推しメンで繋がる」モーダルの閉じるボタン押下時の処理
+  $(document).on('click','.userLoveMemberIndexClose',function() {
+    $('.header, .main-title, .nav-bar, .main-pan, .top-scroll-right, .bxslider-wrapper, .side, .content, .side-menu, .breadcrumb').css('opacity',1);
+    $('.userLoveMemberIndex').animate({
+      'top' : '-100%'
+    },300);
+    $('.userLoveMemberIndexNav').css('display','flex');
+    $('.userLoveMemberIndexTitle p').text('推しメン別ユーザー一覧');
+    $('.userLoveMemberIndexTitle').css('background-image','');
+    $('.userLoveMemberIndexContent').css('height','69vh');
+    $('.userLoveMemberIndexContentNogizaka').css('display','block');
+    $('.userLoveMemberIndexBack').css('display','none');
+
+    $('.userLoveMemberIndexContentNogizakaUserFlex div, .userLoveMemberIndexContentKeyakizakaUserFlex div, .userLoveMemberIndexContentHinatazakaUserFlex div').remove();
+  });
+
+  // 「推しメンで繋がる」モーダルの戻るボタン押下時の処理
+  $(document).on('click','.userLoveMemberIndexBack',function() {
+    $('.userLoveMemberIndexNav').css('display','flex');
+    $('.userLoveMemberIndexTitle p').text('推しメン別ユーザー一覧');
+    $('.userLoveMemberIndexTitle').css('background-image','');
+    $('.userLoveMemberIndexContent').css('height','69vh');
+    $('.userLoveMemberIndexContentNogizaka').css('display','block');
+    $('.userLoveMemberIndexBack').css('display','none');
+
+    $('.userLoveMemberIndexContentNogizakaUserFlex div, .userLoveMemberIndexContentKeyakizakaUserFlex div, .userLoveMemberIndexContentHinatazakaUserFlex div').remove();
+  });
+
+  // 「推しメンで繋がる」モーダルの乃木坂メンバー選択時の処理
+  $(document).on('click','.userLoveMemberIndexContentNogizaka .menu-content-item',function() {
+    $('.userLoveMemberIndexBack').css('display','block');
+    $('.userLoveMemberIndexNav').css('display','none');
+    let nogizakaMemberName = $(this).find('label span').text();
+    $('.userLoveMemberIndexTitle p').text(nogizakaMemberName + '推しのユーザー一覧');
+    $('.userLoveMemberIndexTitle').css('background-image','linear-gradient(to right, #c471f5 0%, #fa71cd 100%)');
+    $('.userLoveMemberIndexContent').css('height','74vh');
+    $('.userLoveMemberIndexContentNogizaka').css('display','none');
+
+    $('.userLoveMemberIndexContentNogizakaUser').css('display','block');
+    $('.userLoveMemberIndexContentKeyakizakaUser, .userLoveMemberIndexContentHinatazakaUser').css('display','none');
+
+    $.ajax({
+      type: 'GET',
+      url: 'http://192.168.33.14/laravel_lessons/development/sakamiti_com/public/loveRegisterUserGet',
+      data: {
+        nogizakaMemberName: nogizakaMemberName,
+        name: 'nogizaka'
+      },
+      dataType: 'json'
+    }).done(function(data) {
+      console.log(data);
+      $('.userLoveMemberIndexContentNogizakaUser').css('display','block');
+      for(let i = 0;i < data.users.length;i++) {
+        $('.userLoveMemberIndexContentNogizakaUserFlex')
+          .append('<div></div>')
+          .find('div:last')
+          .addClass('userLoveMemberIndexContentNogizakaUserItem')
+          .prepend('<div class="userItemTopWrapper"></div>')
+          .find('.userItemTopWrapper')
+          .prepend('<div class="userItemTopLeft"></div>')
+          .find('.userItemTopLeft')
+          .append('<img src="' + data.users[i][0].avatar + '">')
+          .parent()
+          .append('<div class="userItemTopCenter"></div>')
+          .find('.userItemTopCenter')
+          .append('<p class="userItemName">' + data.users[i][0].name + '</p>')
+          .append('<p class="userItemNickName">@' + data.users[i][0].nickname + '</p>')
+          .append('<p class="userItemLocation"><i class="fas fa-map-marker-alt"></i> ' + data.users[i][0].location + '</p>')
+          .parent()
+          .append('<div class="userItemTopRight"></div>')
+          .find('.userItemTopRight')
+          .append('<p class="userItemProfile"><a href="https://twitter.com/' + data.users[i][0].nickname + '" target="_blank">プロフィール</a></p>')
+          .parents('.userLoveMemberIndexContentNogizakaUserItem')
+          .append('<div class="userItemMiddleWrapper"></div>')
+          .find('.userItemMiddleWrapper')
+          .append('<div class="userItemFriendsCount"><p>フォロー数</p><p>' + data.users[i][0].friends_count + '</p></div>')
+          .append('<div class="userItemFollowersCount"><p>フォロワー数</p><p>' + data.users[i][0].followers_count + '</p></div>')
+          .append('<div class="userItemFavouritesCount"><p>いいね数</p><p>' + data.users[i][0].favourites_count + '</p></div>')
+          .parents('.userLoveMemberIndexContentNogizakaUserItem')
+          .append('<div class="userItemBottomWrapper"></div>')
+          .find('.userItemBottomWrapper')
+          .append('<p class="userItemDescription">' + data.users[i][0].description + '</p>');
+      }
+    }).fail(function(data) {
+      console.log(data);
+    });
+  });
+
+  // 「推しメンで繋がる」モーダルの欅坂メンバー選択時の処理
+  $(document).on('click','.userLoveMemberIndexContentKeyakizaka .menu-content-item',function() {
+    $('.userLoveMemberIndexBack').css('display','block');
+    $('.userLoveMemberIndexNav').css('display','none');
+    let keyakizakaMemberName = $(this).find('label span').text();
+    $('.userLoveMemberIndexTitle p').text(keyakizakaMemberName + '推しのユーザー一覧');
+    $('.userLoveMemberIndexTitle').css('background-image','linear-gradient(to right, #38f9d7 0%, #43e97b 100%)');
+    $('.userLoveMemberIndexContent').css('height','74vh');
+    $('.userLoveMemberIndexContentKeyakizaka').css('display','none');
+
+    $('.userLoveMemberIndexContentKeyakizakaUser').css('display','block');
+    $('.userLoveMemberIndexContentNogizakaUser, .userLoveMemberIndexContentHinatazakaUser').css('display','none');
+
+    $.ajax({
+      type: 'GET',
+      url: 'http://192.168.33.14/laravel_lessons/development/sakamiti_com/public/loveRegisterUserGet',
+      data: {
+        keyakizakaMemberName: keyakizakaMemberName,
+        name: 'keyakizaka'
+      },
+      dataType: 'json'
+    }).done(function(data) {
+      console.log(data);
+      $('.userLoveMemberIndexContentKeyakizakaUser').css('display','block');
+      for(let i = 0;i < data.users.length;i++) {
+        $('.userLoveMemberIndexContentKeyakizakaUserFlex')
+          .append('<div></div>')
+          .find('div:last')
+          .addClass('userLoveMemberIndexContentKeyakizakaUserItem')
+          .prepend('<div class="userItemTopWrapper"></div>')
+          .find('.userItemTopWrapper')
+          .prepend('<div class="userItemTopLeft"></div>')
+          .find('.userItemTopLeft')
+          .append('<img src="' + data.users[i][0].avatar + '">')
+          .parent()
+          .append('<div class="userItemTopCenter"></div>')
+          .find('.userItemTopCenter')
+          .append('<p class="userItemName">' + data.users[i][0].name + '</p>')
+          .append('<p class="userItemNickName">@' + data.users[i][0].nickname + '</p>')
+          .append('<p class="userItemLocation"><i class="fas fa-map-marker-alt"></i> ' + data.users[i][0].location + '</p>')
+          .parent()
+          .append('<div class="userItemTopRight"></div>')
+          .find('.userItemTopRight')
+          .append('<p class="userItemProfile"><a href="https://twitter.com/' + data.users[i][0].nickname + '" target="_blank">プロフィール</a></p>')
+          .parents('.userLoveMemberIndexContentKeyakizakaUserItem')
+          .append('<div class="userItemMiddleWrapper"></div>')
+          .find('.userItemMiddleWrapper')
+          .append('<div class="userItemFriendsCount"><p>フォロー数</p><p>' + data.users[i][0].friends_count + '</p></div>')
+          .append('<div class="userItemFollowersCount"><p>フォロワー数</p><p>' + data.users[i][0].followers_count + '</p></div>')
+          .append('<div class="userItemFavouritesCount"><p>いいね数</p><p>' + data.users[i][0].favourites_count + '</p></div>')
+          .parents('.userLoveMemberIndexContentKeyakizakaUserItem')
+          .append('<div class="userItemBottomWrapper"></div>')
+          .find('.userItemBottomWrapper')
+          .append('<p class="userItemDescription">' + data.users[i][0].description + '</p>');
+      }
+    }).fail(function(data) {
+      console.log(data);
+    });
+  });
+
+  // 「推しメンで繋がる」モーダルの日向坂メンバー選択時の処理
+  $(document).on('click','.userLoveMemberIndexContentHinatazaka .menu-content-item',function() {
+    $('.userLoveMemberIndexBack').css('display','block');
+    $('.userLoveMemberIndexNav').css('display','none');
+    let hinatazakaMemberName = $(this).find('label span').text();
+    $('.userLoveMemberIndexTitle p').text(hinatazakaMemberName + '推しのユーザー一覧');
+    $('.userLoveMemberIndexTitle').css('background-image','linear-gradient(to right, #4facfe 0%, #00f2fe 100%)');
+    $('.userLoveMemberIndexContent').css('height','74vh');
+    $('.userLoveMemberIndexContentHinatazaka').css('display','none');
+
+    $('.userLoveMemberIndexContentHinatazakaUser').css('display','block');
+    $('.userLoveMemberIndexContentNogizakaUser, .userLoveMemberIndexContentKeyakizakaUser').css('display','none');
+
+    $.ajax({
+      type: 'GET',
+      url: 'http://192.168.33.14/laravel_lessons/development/sakamiti_com/public/loveRegisterUserGet',
+      data: {
+        hinatazakaMemberName: hinatazakaMemberName,
+        name: 'hinatazaka'
+      },
+      dataType: 'json'
+    }).done(function(data) {
+      console.log(data);
+      $('.userLoveMemberIndexContentHinatazakaUser').css('display','block');
+      for(let i = 0;i < data.users.length;i++) {
+        $('.userLoveMemberIndexContentHinatazakaUserFlex')
+          .append('<div></div>')
+          .find('div:last')
+          .addClass('userLoveMemberIndexContentHinatazakaUserItem')
+          .prepend('<div class="userItemTopWrapper"></div>')
+          .find('.userItemTopWrapper')
+          .prepend('<div class="userItemTopLeft"></div>')
+          .find('.userItemTopLeft')
+          .append('<img src="' + data.users[i][0].avatar + '">')
+          .parent()
+          .append('<div class="userItemTopCenter"></div>')
+          .find('.userItemTopCenter')
+          .append('<p class="userItemName">' + data.users[i][0].name + '</p>')
+          .append('<p class="userItemNickName">@' + data.users[i][0].nickname + '</p>')
+          .append('<p class="userItemLocation"><i class="fas fa-map-marker-alt"></i> ' + data.users[i][0].location + '</p>')
+          .parent()
+          .append('<div class="userItemTopRight"></div>')
+          .find('.userItemTopRight')
+          .append('<p class="userItemProfile"><a href="https://twitter.com/' + data.users[i][0].nickname + '" target="_blank">プロフィール</a></p>')
+          .parents('.userLoveMemberIndexContentHinatazakaUserItem')
+          .append('<div class="userItemMiddleWrapper"></div>')
+          .find('.userItemMiddleWrapper')
+          .append('<div class="userItemFriendsCount"><p>フォロー数</p><p>' + data.users[i][0].friends_count + '</p></div>')
+          .append('<div class="userItemFollowersCount"><p>フォロワー数</p><p>' + data.users[i][0].followers_count + '</p></div>')
+          .append('<div class="userItemFavouritesCount"><p>いいね数</p><p>' + data.users[i][0].favourites_count + '</p></div>')
+          .parents('.userLoveMemberIndexContentHinatazakaUserItem')
+          .append('<div class="userItemBottomWrapper"></div>')
+          .find('.userItemBottomWrapper')
+          .append('<p class="userItemDescription">' + data.users[i][0].description + '</p>');
+      }
+    }).fail(function(data) {
+      console.log(data);
+    });
+  });
 });

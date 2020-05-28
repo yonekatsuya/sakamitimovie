@@ -36,6 +36,9 @@
           $link = '<iframe width="560" height="315" src="https://www.youtube.com/embed/'+ response.items[$i].snippet.resourceId.videoId +'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
           $description = response.items[$i].snippet.description;
           $title = response.items[$i].snippet.title;
+          if ($title.indexOf('動画が削除されました') > -1 || $title.indexOf('動画は非公開です') > -1 || $title.indexOf('Private video') > -1) {
+            continue;
+          }
           console.log('start');
           $.ajax({
             headers: {
@@ -46,9 +49,9 @@
             data: {
               title: $title,
               link: $link,
-              category: '乃木坂46',
+              category: '日向坂46',
               category_search: '',
-              member_name: '秋元真夏',
+              member_name: '渡邉美穂',
               description: $description
             },
           }).done(function() {

@@ -40,6 +40,10 @@
   padding: 10px 0 10px 0;
 }
 
+.side li:hover {
+  opacity: 0.7;
+}
+
 .side li a {
   cursor: pointer;
   color: white;
@@ -76,6 +80,10 @@
   font-size: 30px;
 }
 
+.side-nogizaka-title span, .side-keyakizaka-title span, .side-hinatazaka-title span {
+  color: black;
+}
+
 .sideCategory {
   display: none;
 }
@@ -104,21 +112,34 @@
   height: 50%;
 }
 
+.row1-content .calendar-and-category-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .row1-content .calender  {
   font-size: 14px;
-  display: inline-block;
 }
 
 .row1-content .category {
-  display: inline-block;
   color: white;
   font-weight: bold;
-  background-color: #7e1184;
   padding: 4px;
 }
 
 .row1-content > div {
   padding-left: 20px;
+  padding-right: 20px;
+}
+
+.row1-content .title-label {
+  font-weight: bold;
+  border-bottom: 1px solid #999;
+}
+
+.row1-content .description-label {
+  font-weight: bold;
+  border-bottom: 1px solid #999;
 }
 
 .content-pagination {
@@ -339,4 +360,359 @@
 #categorySearch a span:hover {
   font-weight: bold;
   opacity: 0.7;
+}
+
+/* 「ユーザー一覧」モーダル */
+.userIndex {
+  height: 80vh;
+  width: 90vw;
+  position: fixed;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 10005;
+}
+
+.userIndexModal {
+  position: relative;
+}
+
+.userIndexClose {
+  position: absolute;
+  top: 0%;
+  right: 1%;
+  transform: translate(-0%,-1%);
+  color: red;
+  z-index: 10005;
+  font-size: 30px;
+}
+
+.userIndexTitle {
+  height: 6vh;
+  background-color: #999;
+  position: relative;
+}
+
+.userIndexTitle p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 24px;
+}
+
+.userIndexContent {
+  height: 74vh;
+  background-color: #f0f8ff;
+  overflow-y: scroll;
+}
+
+.userLoveMemberIndex {
+  height: 80vh;
+  width: 90vw;
+  position: fixed;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 10005;
+}
+
+.userLoveMemberIndexModal {
+  position: relative;
+}
+
+.userLoveMemberIndexBack {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 1%;
+  transform: translate(-0%,-1%);
+  color: green;
+  z-index: 10005;
+  font-size: 30px;
+}
+
+.userLoveMemberIndexClose {
+  position: absolute;
+  top: 0%;
+  right: 1%;
+  transform: translate(-0%,-1%);
+  color: red;
+  z-index: 10005;
+  font-size: 30px;
+}
+
+.userLoveMemberIndexTitle {
+  height: 6vh;
+  background-color: #999;
+  position: relative;
+}
+
+.userLoveMemberIndexTitle p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 24px;
+}
+
+.userLoveMemberIndexNav {
+  height: 5vh;
+  display: flex;
+}
+
+.userLoveMemberIndexNavNogizaka {
+  height: 5vh;
+  width: 33%;
+  background-image: linear-gradient(to right, #c471f5 0%, #fa71cd 100%);
+  position: relative;
+}
+
+.userLoveMemberIndexNavNogizaka:hover, .userLoveMemberIndexNavKeyakizaka:hover, .userLoveMemberIndexNavHinatazaka:hover {
+  opacity: 0.9;
+}
+
+.userLoveMemberIndexNavKeyakizaka {
+  height: 5vh;
+  width: 34%;
+  background-image: linear-gradient(to right, #38f9d7 0%, #43e97b 100%);
+  position: relative;
+}
+
+.userLoveMemberIndexNavHinatazaka {
+  height: 5vh;
+  width: 33%;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  position: relative;
+}
+
+.userLoveMemberIndexNavNogizaka p, .userLoveMemberIndexNavKeyakizaka p, .userLoveMemberIndexNavHinatazaka p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 24px;
+  color: white;
+}
+
+.userLoveMemberIndexContent {
+  height: 69vh;
+  background-color: #f0f8ff;
+  overflow-y: scroll;
+}
+
+.userLoveMemberIndexContent li {
+  display: inline-block;
+  padding: 20px;
+  font-size: 22px;
+}
+
+.userLoveMemberIndexContentKeyakizaka {
+  display: none;
+}
+
+.userLoveMemberIndexContentHinatazaka {
+  display: none;
+}
+
+.userLoveMemberIndexContentNogizakaUser {
+  display: none;
+}
+
+.userLoveMemberIndexContentKeyakizakaUser {
+  display: none;
+}
+
+.userLoveMemberIndexContentHinatazakaUser {
+  display: none;
+}
+
+.userLoveMemberIndexContentNogizakaUserItem, .userLoveMemberIndexContentKeyakizakaUserItem, .userLoveMemberIndexContentHinatazakaUserItem {
+  width: 32vw;
+  height: 30vh;
+  background-color: #999;
+  margin: 20px;
+  padding: 15px;
+}
+
+.userLoveMemberIndexContentNogizakaUserFlex, .userLoveMemberIndexContentKeyakizakaUserFlex, .userLoveMemberIndexContentHinatazakaUserFlex {
+  display: flex;
+}
+
+.userLoveMemberIndexContentNogizakaUserItem p, .userLoveMemberIndexContentKeyakizakaUserItem p, .userLoveMemberIndexContentHinatazakaUserItem p {
+  margin: 0;
+}
+
+.userLoveMemberIndexContentNogizakaUserItem .userItemTopWrapper, .userLoveMemberIndexContentKeyakizakaUserItem .userItemTopWrapper, .userLoveMemberIndexContentHinatazakaUserItem .userItemTopWrapper {
+  display: flex;
+}
+
+.userItemTopWrapper .userItemTopLeft {
+  width: 20%;
+}
+
+.userLoveMemberIndexContentNogizakaUserItem img, .userLoveMemberIndexContentKeyakizakaUserItem img, .userLoveMemberIndexContentHinatazakaUserItem img {
+  display: inline-block;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+}
+
+.userLoveMemberIndexContentNogizakaUserItem .userItemName, .userLoveMemberIndexContentKeyakizakaUserItem .userItemName, .userLoveMemberIndexContentHinatazakaUserItem .userItemName {
+  font-size: 24px;
+}
+
+.userItemTopWrapper .userItemTopCenter {
+  width: 45%;
+}
+
+.userItemTopWrapper .userItemTopRight {
+  flex: 1;
+  text-align: center;
+}
+
+.userItemTopRight .userItemProfile {
+  margin-top: 20px;
+  background-color: skyblue;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.userItemTopRight .userItemProfile a {
+  color: white;
+}
+
+.userLoveMemberIndexContentNogizakaUserItem .userItemMiddleWrapper, .userLoveMemberIndexContentKeyakizakaUserItem .userItemMiddleWrapper, .userLoveMemberIndexContentHinatazakaUserItem .userItemMiddleWrapper {
+  display: flex;
+  text-align: center;
+  font-weight: bold;
+}
+
+.userItemMiddleWrapper .userItemFriendsCount {
+  width: 33%;
+  border-left: 1px solid black;
+}
+
+.userItemMiddleWrapper .userItemFriendsCount p:nth-child(1), .userItemMiddleWrapper .userItemFollowersCount p:nth-child(1), .userItemMiddleWrapper .userItemFavouritesCount p:nth-child(1) {
+  font-size: 18px;
+}
+
+.userItemMiddleWrapper .userItemFriendsCount p:nth-child(2), .userItemMiddleWrapper .userItemFollowersCount p:nth-child(2), .userItemMiddleWrapper .userItemFavouritesCount p:nth-child(2) {
+  font-size: 22px;
+}
+
+.userItemMiddleWrapper .userItemFollowersCount {
+  width: 34%;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.userItemMiddleWrapper .userItemFavouritesCount {
+  flex: 1;
+  border-right: 1px solid black;
+}
+
+.userItemBottomWrapper {
+  margin-top: 10px;
+}
+
+/* 「ユーザー一覧」表示 */
+.userIndexContentItem {
+  width: 32vw;
+  height: 30vh;
+  background-color: #999;
+  margin: 20px;
+  padding: 15px;
+}
+
+.userIndexContentItem p {
+  margin: 0;
+}
+
+.userIndexContentFlex {
+  display: flex;
+}
+
+.userIndexContenItem p {
+  margin: 0;
+}
+
+.userIndexContentItem .userIndexContentItemTopWrapper {
+  display: flex;
+}
+
+.userIndexContentItemTopWrapper .userIndexContentItemTopLeft {
+  width: 20%;
+}
+
+.userIndexContentItem img {
+  display: inline-block;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+}
+
+.userIndexContentItem .userIndexContentItemName {
+  font-size: 24px;
+}
+
+.userIndexContentItemTopWrapper .userIndexContentItemTopCenter {
+  width: 45%;
+}
+
+.userIndexContentItemTopWrapper .userIndexContentItemTopRight {
+  flex: 1;
+  text-align: center;
+}
+
+.userIndexContentItemTopRight .userIndexContentItemProfile {
+  margin-top: 20px;
+  background-color: skyblue;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.userIndexContentItemTopRight .userIndexContentItemProfile a {
+  color: white;
+}
+
+.userIndexContentItem .userIndexContentItemMiddleWrapper {
+  display: flex;
+  text-align: center;
+  font-weight: bold;
+}
+
+.userIndexContentItemMiddleWrapper .userIndexContentItemFriendsCount {
+  width: 33%;
+  border-left: 1px solid black;
+}
+
+.userIndexContentItemMiddleWrapper .userIndexContentItemFriendsCount p:nth-child(1), .userIndexContentItemMiddleWrapper .userIndexContentItemFollowersCount p:nth-child(1), .userIndexContentItemMiddleWrapper .userIndexContentItemFavouritesCount p:nth-child(1) {
+  font-size: 18px;
+}
+
+.userIndexContentItemMiddleWrapper .userIndexContentItemFriendsCount p:nth-child(2), .userIndexContentItemMiddleWrapper .userIndexContentItemFollowersCount p:nth-child(2), .userIndexContentItemMiddleWrapper .userIndexContentItemFavouritesCount p:nth-child(2) {
+  font-size: 22px;
+}
+
+.userIndexContentItemMiddleWrapper .userIndexContentItemFollowersCount {
+  width: 34%;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.userIndexContentItemMiddleWrapper .userIndexContentItemFavouritesCount {
+  flex: 1;
+  border-right: 1px solid black;
+}
+
+.userIndexContentItemBottomWrapper {
+  margin-top: 10px;
 }

@@ -1,8 +1,12 @@
-@include('layout.searchbox')
+<!-- @include('layout.searchbox') -->
 
 @include('layout.categorySearch')
 
 @include('layout.navMenu')
+
+@include('layout.userIndex')
+
+@include('layout.userLoveMemberIndex')
 
 <!-- サイドコンテンツ（仮） -->
 <div class="side">
@@ -25,7 +29,7 @@
   <div class="side-title">メンバー別動画</div>
 
   <div class="side-nogizaka">
-    <div class="side-nogizaka-title">乃木坂46メンバー</div>
+    <div class="side-nogizaka-title"><span>&rsaquo;</span> 乃木坂46メンバー <span>&lsaquo;</span></div>
     <div class="side-nogizaka-list">
       <ul>
         <li><a href="{{route('nogizakaAkimoto')}}">秋元真夏({{$countAkimoto}})</a></li>
@@ -59,7 +63,7 @@
         <li><a href="{{route('nogizakaShinuchi')}}">新内眞衣({{$countShinuchi}})</a></li>
         <li><a href="{{route('nogizakaShiraishi')}}">白石麻衣({{$countShiraishi}})</a></li>
         <li><a href="{{route('nogizakaTakayama')}}">高山一実({{$countTakayama}})</a></li>
-        <li><a href="{{route('nogizakaSakaguchi')}}">阪口珠実({{$countSakaguchi}})</a></li>
+        <li><a href="{{route('nogizakaSakaguchi')}}">阪口珠美({{$countSakaguchi}})</a></li>
         <li><a href="{{route('nogizakaTamura')}}">田村真佑({{$countTamura}})</a></li>
         <li><a href="{{route('nogizakaTsutsui')}}">筒井あやめ({{$countTsutsui}})</a></li>
         <li><a href="{{route('nogizakaUmezawa')}}">梅澤美波({{$countUmezawa}})</a></li>
@@ -76,7 +80,7 @@
   </div>
 
   <div class="side-keyakizaka">
-    <div class="side-keyakizaka-title">欅坂46メンバー</div>
+    <div class="side-keyakizaka-title"><span>&rsaquo;</span> 欅坂46メンバー <span>&lsaquo;</span></div>
     <div class="side-keyakizaka-list">
       <ul>
         <li><a href="{{route('keyakizakaHabu')}}">土生瑞穂({{$countHabu}})</a></li>
@@ -107,7 +111,7 @@
   </div>
 
   <div class="side-hinatazaka">
-    <div class="side-hinatazaka-title">日向坂46メンバー</div>
+    <div class="side-hinatazaka-title"><span>&rsaquo;</span> 日向坂46メンバー <span>&lsaquo;</span></div>
     <div class="side-hinatazaka-list">
       <ul>
         <li><a href="{{route('hinatazakaHamagishi')}}">濱岸ひより({{$countHamagishi}})</a></li>
@@ -133,7 +137,7 @@
     </div>
   </div>
 
-  <a class="twitter-timeline" data-lang="ja" data-height="1000" data-theme="dark" href="https://twitter.com/yone_sakamiti?ref_src=twsrc%5Etfw">Tweets by yone_sakamiti</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <a class="twitter-timeline" data-lang="ja" data-height="1000" data-theme="dark" href="https://twitter.com/sakamitimovie?ref_src=twsrc%5Etfw">Tweets by sakamitimovie</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
   @include('layout.sideCategory')
 </div>

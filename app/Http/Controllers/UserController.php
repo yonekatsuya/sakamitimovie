@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\User;
 use Auth;
 use App\loveMember;
+use Log;
 
 class UserController extends Controller
 {
@@ -60,9 +61,8 @@ class UserController extends Controller
     }
 
     public function index() {
-        $user = Auth::user();
-        $users = User::get();
-        $param = ['user'=>$user,'users'=>$users];
+        $users = User::all();
+        $param = ['users'=>$users];
         return view('user.index',$param);
     }
 
@@ -120,7 +120,7 @@ class UserController extends Controller
                 $registerUser->hinatazakaMember = $request->hinatazakaName;
             }
             $registerUser->save();
-            // 推しメン登録が初めてであれば、新規追加処理
+        // 推しメン登録が初めてであれば、新規追加処理
         } else {
             $registerUser = new loveMember();
             $registerUser->user_id = $user->id;

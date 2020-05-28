@@ -41,7 +41,7 @@ class SakamitiMemberCount extends Controller
         $countShiori = Article::where('member_name','久保史緒里')->get()->count();
         $countShiraishi = Article::where('member_name','白石麻衣')->get()->count();
         $countTakayama = Article::where('member_name','高山一実')->get()->count();
-        $countTamura = Article::where('member_name','田村保乃')->get()->count();
+        $countTamura = Article::where('member_name','田村真佑')->get()->count();
         $countTsutsui = Article::where('member_name','筒井あやめ')->get()->count();
         $countUmezawa = Article::where('member_name','梅澤美波')->get()->count();
         $countWada = Article::where('member_name','和田まあや')->get()->count();
@@ -87,7 +87,7 @@ class SakamitiMemberCount extends Controller
         $countKosaka = Article::where('member_name','小坂菜緒')->get()->count();
         $countKumi = Article::where('member_name','佐々木久美')->get()->count();
         $countManamo = Article::where('member_name','宮田愛萌')->get()->count();
-        $countMiho = Article::where('member_name','渡邊美穂')->get()->count();
+        $countMiho = Article::where('member_name','渡邉美穂')->get()->count();
         $countMirei = Article::where('member_name','佐々木美玲')->get()->count();
         $countNibu = Article::where('member_name','丹生明里')->get()->count();
         $countHinatazakaSaito = Article::where('member_name','齊藤京子')->get()->count();

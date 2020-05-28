@@ -18,7 +18,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/akimoto.png')}}" width="100%" height="100%">
               <p>
-                <label>秋元真夏</label>
+                <label><span>秋元真夏</span>({{$countAkimoto}})</label>
               </p>
             </div>
           </a>
@@ -26,7 +26,7 @@
             <div class="menu-content-item">
             <img src="{{asset('/image/nogizaka/asuka.png')}}" width="100%" height="100%">
             <p>
-              <label>齋藤飛鳥</label>
+              <label><span>齋藤飛鳥</span>({{$countAsuka}})</label>
             </p>
             </div>
           </a>
@@ -34,7 +34,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/ayane.png')}}" width="100%" height="100%">
               <p>
-                <label>鈴木絢音</label>
+                <label><span>鈴木絢音</span>({{$countAyane}})</label>
               </p>
             </div>
           </a>
@@ -42,7 +42,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/endo.png')}}" width="100%" height="100%">
               <p>
-                <label>遠藤さくら</label>
+                <label><span>遠藤さくら</span>({{$countSakura}})</label>
               </p>
             </div>
           </a>
@@ -50,7 +50,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/hayakawa.png')}}" width="100%" height="100%">
               <p>
-                <label>早川聖来</label>
+                <label><span>早川聖来</span>({{$countHayakawa}})</label>
               </p>
             </div>
           </a>
@@ -58,7 +58,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/higuti.png')}}" width="100%" height="100%">
               <p>
-                <label>樋口日菜</label>
+                <label><span>樋口日菜</span>({{$countHiguchi}})</label>
               </p>
             </div>
           </a>
@@ -66,7 +66,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/hori.png')}}" width="100%" height="100%">
               <p>
-                <label>堀未央奈</label>
+                <label><span>堀未央奈</span>({{$countHori}})</label>
               </p>
             </div>
           </a>
@@ -74,7 +74,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/hoshino.png')}}" width="100%" height="100%">
               <p>
-                <label>星野みなみ</label>
+                <label><span>星野みなみ</span>({{$countHoshino}})</label>
               </p>
             </div>
           </a>
@@ -82,7 +82,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/ikuta.png')}}" width="100%" height="100%">
               <p>
-                <label>生田絵梨花</label>
+                <label><span>生田絵梨花</span>({{$countIkuta}})</label>
               </p>
             </div>
           </a>
@@ -90,7 +90,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/kaede.png')}}" width="100%" height="100%">
               <p>
-                <label>佐藤楓</label>
+                <label><span>佐藤楓</span>({{$countKaede}})</label>
               </p>
             </div>
           </a>
@@ -98,7 +98,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/kakehasi.png')}}" width="100%" height="100%">
               <p>
-                <label>掛橋沙也加</label>
+                <label><span>掛橋沙也加</span>({{$countKakehashi}})</label>
               </p>
             </div>
           </a>
@@ -106,7 +106,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/kaki.png')}}" width="100%" height="100%">
               <p>
-                <label>賀喜遥華</label>
+                <label><span>賀喜遥華</span>({{$countKaki}})</label>
               </p>
             </div>
           </a>
@@ -114,7 +114,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/kanagawa.png')}}" width="100%" height="100%">
               <p>
-                <label>金川沙耶</label>
+                <label><span>金川沙耶</span>({{$countKanagawa}})</label>
               </p>
             </div>
           </a>
@@ -122,7 +122,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/kitagawa.png')}}" width="100%" height="100%">
               <p>
-                <label>北川悠里</label>
+                <label><span>北川悠里</span>({{$countKitagawa}})</label>
               </p>
             </div>
           </a>
@@ -130,7 +130,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/kitano.png')}}" width="100%" height="100%">
               <p>
-                <label>北野日奈子</label>
+                <label><span>北野日奈子</span>({{$countKitano}})</label>
               </p>
             </div>
           </a>
@@ -138,7 +138,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/kotoko.png')}}" width="100%" height="100%">
               <p>
-                <label>佐々木琴子</label>
+                <label><span>佐々木琴子</span>({{$countKotoko}})</label>
               </p>
             </div>
           </a>
@@ -146,7 +146,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/kubo.png')}}" width="100%" height="100%">
               <p>
-                <label>久保史緒里</label>
+                <label><span>久保史緒里</span>({{$countShiori}})</label>
               </p>
             </div>
           </a>
@@ -154,7 +154,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/matsumura.png')}}" width="100%" height="100%">
               <p>
-                <label>松村沙友理</label>
+                <label><span>松村沙友理</span>({{$countMatsumura}})</label>
               </p>
             </div>
           </a>
@@ -162,7 +162,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/momoko.png')}}" width="100%" height="100%">
               <p>
-                <label>大園桃子</label>
+                <label><span>大園桃子</span>({{$countMomoko}})</label>
               </p>
             </div>
           </a>
@@ -170,7 +170,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/mukai.png')}}" width="100%" height="100%">
               <p>
-                <label>向井葉月</label>
+                <label><span>向井葉月</span>({{$countMukai}})</label>
               </p>
             </div>
           </a>
@@ -178,7 +178,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/nakada.png')}}" width="100%" height="100%">
               <p>
-                <label>中田花奈</label>
+                <label><span>中田花奈</span>({{$countNakada}})</label>
               </p>
             </div>
           </a>
@@ -186,7 +186,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/nakamura.png')}}" width="100%" height="100%">
               <p>
-                <label>中村麗乃</label>
+                <label><span>中村麗乃</span>({{$countNakamura}})</label>
               </p>
             </div>
           </a>
@@ -194,7 +194,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/ranze.png')}}" width="100%" height="100%">
               <p>
-                <label>寺田蘭世</label>
+                <label><span>寺田蘭世</span>({{$countRanze}})</label>
               </p>
             </div>
           </a>
@@ -202,7 +202,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/renka.png')}}" width="100%" height="100%">
               <p>
-                <label>岩本蓮華</label>
+                <label><span>岩本蓮華</span>({{$countRenka}})</label>
               </p>
             </div>
           </a>
@@ -210,7 +210,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/riria.png')}}" width="100%" height="100%">
               <p>
-                <label>伊藤理々杏</label>
+                <label><span>伊藤理々杏</span>({{$countRiria}})</label>
               </p>
             </div>
           </a>
@@ -218,7 +218,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/sayuri.png')}}" width="100%" height="100%">
               <p>
-                <label>井上小百合</label>
+                <label><span>井上小百合</span>({{$countSayuri}})</label>
               </p>
             </div>
           </a>
@@ -226,7 +226,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/seimiya.png')}}" width="100%" height="100%">
               <p>
-                <label>清宮レイ</label>
+                <label><span>清宮レイ</span>({{$countSeimiya}})</label>
               </p>
             </div>
           </a>
@@ -234,7 +234,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/sibata.png')}}" width="100%" height="100%">
               <p>
-                <label>柴田由那</label>
+                <label><span>柴田由那</span>({{$countShibata}})</label>
               </p>
             </div>
           </a>
@@ -242,7 +242,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/sinuti.png')}}" width="100%" height="100%">
               <p>
-                <label>新内眞衣</label>
+                <label><span>新内眞衣</span>({{$countShinuchi}})</label>
               </p>
             </div>
           </a>
@@ -250,7 +250,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/siraisi.png')}}" width="100%" height="100%">
               <p>
-                <label>白石麻衣</label>
+                <label><span>白石麻衣</span>({{$countShiraishi}})</label>
               </p>
             </div>
           </a>
@@ -258,7 +258,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/takayama.png')}}" width="100%" height="100%">
               <p>
-                <label>高山一実</label>
+                <label><span>高山一実</span>({{$countTakayama}})</label>
               </p>
             </div>
           </a>
@@ -266,7 +266,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/tamami.png')}}" width="100%" height="100%">
               <p>
-                <label>阪口珠美</label>
+                <label><span>阪口珠美</span>({{$countSakaguchi}})</label>
               </p>
             </div>
           </a>
@@ -274,7 +274,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/tamura.png')}}" width="100%" height="100%">
               <p>
-                <label>田村真佑</label>
+                <label><span>田村真佑</span>({{$countTamura}})</label>
               </p>
             </div>
           </a>
@@ -282,7 +282,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/tsutsui.png')}}" width="100%" height="100%">
               <p>
-                <label>筒井あやめ</label>
+                <label><span>筒井あやめ</span>({{$countTsutsui}})</label>
               </p>
             </div>
           </a>
@@ -290,7 +290,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/ume.png')}}" width="100%" height="100%">
               <p>
-                <label>梅澤美波</label>
+                <label><span>梅澤美波</span>({{$countUmezawa}})</label>
               </p>
             </div>
           </a>
@@ -298,7 +298,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/wada.png')}}" width="100%" height="100%">
               <p>
-                <label>和田まあや</label>
+                <label><span>和田まあや</span>({{$countWada}})</label>
               </p>
             </div>
           </a>
@@ -306,7 +306,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/watanabe.png')}}" width="100%" height="100%">
               <p>
-                <label>渡辺みり愛</label>
+                <label><span>渡辺みり愛</span>({{$countMiria}})</label>
               </p>
             </div>
           </a>
@@ -314,7 +314,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/yakubo.png')}}" width="100%" height="100%">
               <p>
-                <label>矢久保美緒</label>
+                <label><span>矢久保美緒</span>({{$countYakubo}})</label>
               </p>
             </div>
           </a>
@@ -322,7 +322,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/yamasita.png')}}" width="100%" height="100%">
               <p>
-                <label>山下美月</label>
+                <label><span>山下美月</span>({{$countYamashita}})</label>
               </p>
             </div>
           </a>
@@ -330,7 +330,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/yamazaki.png')}}" width="100%" height="100%">
               <p>
-                <label>山崎怜奈</label>
+                <label><span>山崎怜奈</span>({{$countYamasaki}})</label>
               </p>
             </div>
           </a>
@@ -338,7 +338,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/yoda.png')}}" width="100%" height="100%">
               <p>
-                <label>与田祐希</label>
+                <label><span>与田祐希</span>({{$countYoda}})</label>
               </p>
             </div>
           </a>
@@ -346,7 +346,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/yosida.png')}}" width="100%" height="100%">
               <p>
-                <label>吉田彩乃クリスティー</label>
+                <label><span>吉田彩乃クリスティー</span>({{$countYoshida}})</label>
               </p>
             </div>
           </a>
@@ -354,7 +354,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/nogizaka/zyunna.png')}}" width="100%" height="100%">
               <p>
-                <label>伊藤純奈</label>
+                <label><span>伊藤純奈</span>({{$countZyunna}})</label>
               </p>
             </div>
           </a>
@@ -365,7 +365,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/habu.png')}}" width="100%" height="100%">
               <p>
-                <label>土生瑞穂</label>
+                <label><span>土生瑞穂</span>({{$countHabu}})</label>
               </p>
             </div>
           </a>
@@ -373,7 +373,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/harada.png')}}" width="100%" height="100%">
               <p>
-                <label>原田葵</label>
+                <label><span>原田葵</span>({{$countHarada}})</label>
               </p>
             </div>
           </a>
@@ -381,7 +381,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/huziyosi.png')}}" width="100%" height="100%">
               <p>
-                <label>藤吉夏鈴</label>
+                <label><span>藤吉夏鈴</span>({{$countHuziyoshi}})</label>
               </p>
             </div>
           </a>
@@ -389,7 +389,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/inoue.png')}}" width="100%" height="100%">
               <p>
-                <label>井上梨奈</label>
+                <label><span>井上梨奈</span>({{$countInoue}})</label>
               </p>
             </div>
           </a>
@@ -397,7 +397,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/isimori.png')}}" width="100%" height="100%">
               <p>
-                <label>石森虹花</label>
+                <label><span>石森虹花</span>({{$countIshimori}})</label>
               </p>
             </div>
           </a>
@@ -405,7 +405,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/kobayasi.png')}}" width="100%" height="100%">
               <p>
-                <label>小林由衣</label>
+                <label><span>小林由衣</span>({{$countKobayashi}})</label>
               </p>
             </div>
           </a>
@@ -413,7 +413,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/koike.png')}}" width="100%" height="100%">
               <p>
-                <label>小池美波</label>
+                <label><span>小池美波</span>({{$countKoike}})</label>
               </p>
             </div>
           </a>
@@ -421,7 +421,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/matsudaira.png')}}" width="100%" height="100%">
               <p>
-                <label>松平梨奈</label>
+                <label><span>松平梨奈</span>({{$countMatsudaira}})</label>
               </p>
             </div>
           </a>
@@ -429,7 +429,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/morita.png')}}" width="100%" height="100%">
               <p>
-                <label>森田ひかる</label>
+                <label><span>森田ひかる</span>({{$countMorita}})</label>
               </p>
             </div>
           </a>
@@ -437,7 +437,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/moriya.png')}}" width="100%" height="100%">
               <p>
-                <label>守屋茜</label>
+                <label><span>守屋茜</span>({{$countMoriya}})</label>
               </p>
             </div>
           </a>
@@ -445,7 +445,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/nagasawa.png')}}" width="100%" height="100%">
               <p>
-                <label>長沢菜々子</label>
+                <label><span>長沢菜々子</span>({{$countNagasawa}})</label>
               </p>
             </div>
           </a>
@@ -453,7 +453,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/ozeki.png')}}" width="100%" height="100%">
               <p>
-                <label>尾関梨香</label>
+                <label><span>尾関梨香</span>({{$countOzeki}})</label>
               </p>
             </div>
           </a>
@@ -461,7 +461,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/risa.png')}}" width="100%" height="100%">
               <p>
-                <label>渡邊理沙</label>
+                <label><span>渡邊理沙</span>({{$countRisa}})</label>
               </p>
             </div>
           </a>
@@ -469,7 +469,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/saito.png')}}" width="100%" height="100%">
               <p>
-                <label>齋藤冬優花</label>
+                <label><span>齋藤冬優花</span>({{$countKeyakizakaSaito}})</label>
               </p>
             </div>
           </a>
@@ -477,7 +477,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/sato.png')}}" width="100%" height="100%">
               <p>
-                <label>佐藤詩織</label>
+                <label><span>佐藤詩織</span>({{$countSato}})</label>
               </p>
             </div>
           </a>
@@ -485,7 +485,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/seki.png')}}" width="100%" height="100%">
               <p>
-                <label>関由美子</label>
+                <label><span>関由美子</span>({{$countSeki}})</label>
               </p>
             </div>
           </a>
@@ -493,7 +493,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/sugai.png')}}" width="100%" height="100%">
               <p>
-                <label>菅井友香</label>
+                <label><span>菅井友香</span>({{$countSugai}})</label>
               </p>
             </div>
           </a>
@@ -501,7 +501,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/takemoto.png')}}" width="100%" height="100%">
               <p>
-                <label>武本唯衣</label>
+                <label><span>武本唯衣</span>({{$countTakemoto}})</label>
               </p>
             </div>
           </a>
@@ -509,7 +509,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/tamura.png')}}" width="100%" height="100%">
               <p>
-                <label>田村保乃</label>
+                <label><span>田村保乃</span>({{$countKeyakizakaTamura}})</label>
               </p>
             </div>
           </a>
@@ -517,7 +517,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/uemura.png')}}" width="100%" height="100%">
               <p>
-                <label>上村梨奈</label>
+                <label><span>上村梨奈</span>({{$countUemura}})</label>
               </p>
             </div>
           </a>
@@ -525,7 +525,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/watanabe.png')}}" width="100%" height="100%">
               <p>
-                <label>渡辺梨花</label>
+                <label><span>渡辺梨花</span>({{$countRika}})</label>
               </p>
             </div>
           </a>
@@ -533,7 +533,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/keyakizaka/yamasaki.png')}}" width="100%" height="100%">
               <p>
-                <label>山崎天</label>
+                <label><span>山崎天</span>({{$countTen}})</label>
               </p>
             </div>
           </a>
@@ -544,7 +544,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/watanabe.png')}}" width="100%" height="100%">
               <p>
-                <label>渡邉美穂</label>
+                <label><span>渡邉美穂</span>({{$countMiho}})</label>
               </p>
             </div>
           </a>
@@ -552,7 +552,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/tomita.png')}}" width="100%" height="100%">
               <p>
-                <label>富田鈴花</label>
+                <label><span>富田鈴花</span>({{$countTomita}})</label>
               </p>
             </div>
           </a>
@@ -560,7 +560,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/takase.png')}}" width="100%" height="100%">
               <p>
-                <label>高瀬愛菜</label>
+                <label><span>高瀬愛菜</span>({{$countTakase}})</label>
               </p>
             </div>
           </a>
@@ -568,7 +568,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/takamoto.png')}}" width="100%" height="100%">
               <p>
-                <label>高本彩花</label>
+                <label><span>高本彩花</span>({{$countTakamoto}})</label>
               </p>
             </div>
           </a>
@@ -576,7 +576,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/saito.png')}}" width="100%" height="100%">
               <p>
-                <label>齊藤京子</label>
+                <label><span>齊藤京子</span>({{$countHinatazakaSaito}})</label>
               </p>
             </div>
           </a>
@@ -584,7 +584,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/nibu.png')}}" width="100%" height="100%">
               <p>
-                <label>丹生明里</label>
+                <label><span>丹生明里</span>({{$countNibu}})</label>
               </p>
             </div>
           </a>
@@ -592,7 +592,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/mirei.png')}}" width="100%" height="100%">
               <p>
-                <label>佐々木美玲</label>
+                <label><span>佐々木美玲</span>({{$countMirei}})</label>
               </p>
             </div>
           </a>
@@ -600,7 +600,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/kumi.png')}}" width="100%" height="100%">
               <p>
-                <label>佐々木久美</label>
+                <label><span>佐々木久美</span>({{$countKumi}})</label>
               </p>
             </div>
           </a>
@@ -608,7 +608,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/kosaka.png')}}" width="100%" height="100%">
               <p>
-                <label>小坂菜緒</label>
+                <label><span>小坂菜緒</span>({{$countKosaka}})</label>
               </p>
             </div>
           </a>
@@ -616,7 +616,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/kawata.png')}}" width="100%" height="100%">
               <p>
-                <label>河田陽奈</label>
+                <label><span>河田陽奈</span>({{$countKawata}})</label>
               </p>
             </div>
           </a>
@@ -624,7 +624,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/kato.png')}}" width="100%" height="100%">
               <p>
-                <label>加藤史帆</label>
+                <label><span>加藤史帆</span>({{$countKato}})</label>
               </p>
             </div>
           </a>
@@ -632,7 +632,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/kamimura.png')}}" width="100%" height="100%">
               <p>
-                <label>上村ひなの</label>
+                <label><span>上村ひなの</span>({{$countKamimura}})</label>
               </p>
             </div>
           </a>
@@ -640,7 +640,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/kageyama.png')}}" width="100%" height="100%">
               <p>
-                <label>影山優佳</label>
+                <label><span>影山優佳</span>({{$countKageyama}})</label>
               </p>
             </div>
           </a>
@@ -648,7 +648,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/matsuda.png')}}" width="100%" height="100%">
               <p>
-                <label>松田好花</label>
+                <label><span>松田好花</span>({{$countKonoka}})</label>
               </p>
             </div>
           </a>
@@ -656,7 +656,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/higasimura.png')}}" width="100%" height="100%">
               <p>
-                <label>東村芽衣</label>
+                <label><span>東村芽衣</span>({{$countHigashimura}})</label>
               </p>
             </div>
           </a>
@@ -664,7 +664,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/kanemura.png')}}" width="100%" height="100%">
               <p>
-                <label>金村美玖</label>
+                <label><span>金村美玖</span>({{$countKanemura}})</label>
               </p>
             </div>
           </a>
@@ -672,7 +672,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/usio.png')}}" width="100%" height="100%">
               <p>
-                <label>潮紗理菜</label>
+                <label><span>潮紗理菜</span>({{$countUshio}})</label>
               </p>
             </div>
           </a>
@@ -680,7 +680,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/miyata.png')}}" width="100%" height="100%">
               <p>
-                <label>宮田愛萌</label>
+                <label><span>宮田愛萌</span>({{$countManamo}})</label>
               </p>
             </div>
           </a>
@@ -688,7 +688,7 @@
             <div class="menu-content-item">
               <img src="{{asset('/image/hinatazaka/hamagisi.png')}}" width="100%" height="100%">
               <p>
-                <label>濱岸ひより</label>
+                <label><span>濱岸ひより</span>({{$countHamagishi}})</label>
               </p>
             </div>
           </a>

@@ -17,7 +17,6 @@ Route::group(['prefix'=>'user'], function() {
   Route::group(['middleware'=>'auth'], function() {
     // Route::get('/profile','MainController@index')->name('user.profile');
     Route::get('/logout','UserController@getLogout')->name('user.logout');
-    Route::get('/index','UserController@index')->name('user.index');
     Route::get('/loveMemberIndex','UserController@loveMemberIndex')->name('user.loveMemberIndex');
     Route::get('/show/{id}','UserController@show')->name('user.show');
     Route::get('/edit/{id}','UserController@edit')->name('user.edit');
@@ -31,6 +30,9 @@ Route::group(['prefix'=>'user'], function() {
     Route::post('/signin','UserController@postSignin')->name('user.signin');
   });
 });
+
+// ユーザー一覧表示
+Route::get('/index','UserController@index')->name('user.index');
 
 // チャット機能
 Route::get('chat','MainController@chat')->name('main.chat');
@@ -71,6 +73,9 @@ Route::get('auth/twitter', 'Auth\TwitterController@redirectToProvider')->name('a
 Route::get('auth/twitter/callback', 'Auth\TwitterController@handleProviderCallback')->name('auth.callback');
 // ログアウトURL
 Route::get('auth/twitter/logout', 'Auth\TwitterController@logout')->name('auth.logout');
+
+// 推しメン登録ユーザーの取得
+Route::get('/loveRegisterUserGet','MainController@loveRegisterUserGet')->name('loveRegisterUserGet');
 
 
 
